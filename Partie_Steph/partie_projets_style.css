@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#projets{
+    background-color: #F3E8D7;
+}
+
+.titre{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+}
+
+figure{
+    display: flex;
+    width: 100%;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#slider figure img { 
+    min-height: 180px; 
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+div#slider figure p{
+    width: 60%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+  }
+
+  div#slider figure {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    animation: 30s slidy infinite;
+  }
+
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
