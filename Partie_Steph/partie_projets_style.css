@@ -43,6 +43,10 @@ div#slider figure img {
     border-radius: 20px 20px 20px 20px;
 }
 
+#origami{
+    padding-right: 75%;
+}
+
 div#slider figure p{
     width: 80%;
     padding-top: 4%;
