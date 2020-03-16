@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #EBD8C2;
+}
+.red {
+    /*border: 2px solid red;*/
+}
+header {
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+   /* background-color: white;*/
+}
+nav {
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+
+}
+ul {
+    padding-left: 5%;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+    margin-bottom: 20px ;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav a:hover {
+    border-bottom: 2px solid #246B61;
+    color: #246B61;
+}
+
+.ORIGAMI {
+    width: auto;
+    height: 85%;
+}
+
+#us {
+    width: 80vw ;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;   
+}
+#us p {
+    width: 35%;
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-left: 30%;
+    font-size: 20px;
+}
+#us p .suspensionvert {
+    font-size: 38px;
+    color: #246B61;
+}
+#us span {
+    font-size: 60px;
+    font-weight: bold;
+}
+#us h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    margin-top: 20%;
+}
+.boximg img {
+    height: 100%;
+    margin-bottom: 30%;
+}
+.colorform {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #246B61;
+    position: absolute;
+    bottom: 10%;
+    left: 16%;
+    z-index: -2;
+}
+
+#projets{
+    background-color: #E8BA50;
+}
+
+.titre{
+    text-align: center;
+    font-size: 200%;
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+}
+
+#photos{
+    display: flex;
+    overflow-x: scroll;
+    padding: 1rem 0;
+}
+
+img{
+    height: 180px;
+    width: 300px;
+}
+
+footer{
+    height: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
