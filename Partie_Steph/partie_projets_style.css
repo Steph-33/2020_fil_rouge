@@ -5,7 +5,7 @@
 }
 
 #projets{
-    background-color: #F3E8D7;
+    background-color: #C4C4C4;
 }
 
 .titre{
@@ -13,6 +13,8 @@
     font-size: 200%;
     font-family: 'Comic Sans MS';
     font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 figure{
@@ -27,6 +29,13 @@ figure{
     align-items: center;
 }
 
+div#slider figure p.name{
+    font-family: 'Comic Sans MS';
+    font-weight: bold;
+    text-align: right;
+}
+
+
 div#slider figure img { 
     min-height: 180px; 
     padding-left: 10px;
@@ -35,9 +44,12 @@ div#slider figure img {
 }
 
 div#slider figure p{
-    width: 60%;
+    width: 80%;
+    padding-top: 4%;
+    padding-bottom: 4%;
     padding-left: 10px;
     padding-right: 10px;
+    text-align: justify;
 }
 
 @keyframes slidy {
@@ -45,11 +57,11 @@ div#slider figure p{
     20% { left: 0%; }
     25% { left: -100%; }
     45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
+    50% { left: -100%; }
+    70% { left: 0%; }
+    75% { left: 0%; }
+    95% { left: 0%; }
+    100% { left: 0%; }
   }
 
   div#slider figure {
