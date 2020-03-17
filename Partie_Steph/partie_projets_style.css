@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-#projets{
-    background-color: #C4C4C4;
+#projets {
+    background-color: #889781;
 }
 
 .titre{
@@ -31,10 +31,10 @@ figure{
 
 div#slider figure p.name{
     font-family: 'Comic Sans MS';
+    font-size: large;
     font-weight: bold;
     text-align: right;
 }
-
 
 div#slider figure img { 
     min-height: 180px; 
@@ -68,14 +68,45 @@ div#slider figure p{
     100% { left: 0%; }
   }
 
-  div#slider figure {
+div#slider figure {
     position: relative;
     width: 100%;
     margin: 0;
     padding: 0;
     left: 0;
     animation: 30s slidy infinite;
-  }
+}
+
+#services {
+    background-color: #889781;
+}
+
+div#scroll figure p.name{
+    font-family: 'Comic Sans MS';
+    font-size: large;
+    font-weight: bold;
+    text-align: right;
+}
+
+div#scroll figure img { 
+    min-height: 180px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+div#scroll figure #origami{
+    padding-right: 90%;
+}
+
+div#scroll figure p{
+    width: 80%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
 
 footer{
     padding-top: 10px;
