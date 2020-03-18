@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PANAgency</title>
+		<SCRIPT type="text/javascript" src="JS/Carroussel_rotation.js"></script>
+		<SCRIPT type="text/javascript">
+			
+			var Caroussel;
+			function GenererCarrousel(){
+				
+				var Car_Image_Sources=new Array(
+					"Img/image_1.jpg",
+					"Img/image_2.png",
+					"Img/image_3.jpg",
+					"Img/image_4.jpeg",
+					"Img/image_5.jpg",
+					"Img/image_6.jpeg",
+					"Img/image_7.jpg"
+				);
+				Caroussel=new Carroussel_Rotation(document.getElementById('Carousel_Menu'),Car_Image_Sources);
+				Caroussel.RedimentionnerCalque(0); //Ajuste le calque � la taille maximal  de l'image la plus grande
+				Caroussel.Definir_Vitesse(100); //Vitesse de rotation des photos (par d�fault 50ms)
+				Caroussel.Vitesse_Changement_Images(2); //Vitesse de modifications de la taille des photos (par d�fault 5pixels)
+				// Caroussel.Definir_Vitesse_Fondu(0.01); //Vitesse du fondu
+			}
+		</script>
+		<link rel="stylesheet" href="JS/Rotation.css">
+		<script src="https://kit.fontawesome.com/1dac55b7a2.js" crossorigin="anonymous"></script>
+
+</head>
+	<body onload="javascript:GenererCarrousel();">
+		<center id="projets">
+		<div class="titre">
+			Ils nous ont fait confiance...
+		</div>
+		<div id="slider">
+			<div class="box">
+				<div id="origami1">
+				<img src="Img/Origami.png" alt="">
+				</div>
+			</div>  
+			<div id="Carousel_Menu">&nbsp;</div>
+			<div class="box">
+				<div id="origami2">
+				<img src="Img/Origami.png" alt="">
+				</div>
+			</div>
+		</div>
+		</center>
+		<section id="services">
+			<div>
+			  <div class="titre">
+				Nos différents services...
+			  </div>
+			  <div id="scroll">
+				<figure>
+				  <div class="box">
+					<p class="name">Réaliser votre site de vente en ligne</p>
+					<img src="Img/image_site_8.png" alt="">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
+				  </div>
+				  <div class="box">
+					<p class="name">Réaliser votre application mobile</p>
+					<img src="Img/image_site_9.png" alt="">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
+				  </div>
+				  <div class="box">
+					<p class="name">Booster votre visibilité</p>  
+					<img src="Img/image_site_12.jpg" alt="">
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
+				  </div>
+				  <div class="box">
+					<div id="origami">
+					  <img src="Img/Origami.png" alt="">
+					</div>
+				  </div>  
+				</figure>
+			  </div>
+			</div>
+		  </section>
+		  <footer>
+			<div class="copyright">
+			  COPYRIGHT 2020 &copy; Co.-Lynn-Gul-Steph
+			</div>
+			<div class="logos">
+				<i class="fas fa-at"></i>
+				<i class="fab fa-facebook"></i>
+				<i class="fab fa-twitter-square"></i>
+				<i class="fab fa-linkedin"></i>
+			</div>
+		  </footer>
+		</body>
+	  </html>
+	</body>
+</html>
