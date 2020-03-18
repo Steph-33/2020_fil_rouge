@@ -1,173 +1,59 @@
 
-
 #charte {
-        padding: 2%;
-        background-color:#778899;
-        box-shadow: 2px 4px 6px #444;
-        -moz-box-shadow: 2px 4px 6px #444;
-        -webkit-box-shadow: 2px 4px 6px #444;
-        transform: rotate(2deg);
-        -moz-transform: rotate(2deg);
-        -webkit-transform: rotate(2deg);
-        -o-transform: rotate(2deg);
-        -ms-transform: rotate(2deg);
-        border-bottom-right-radius: 20px 10px;
-    }
+background-color: #D9C48F;
+color: #333 ;
+padding: 5% 15%;
+}
 
+#titre {
+  display: flex;
+  justify-content: center;
+}
 
+/* post it */
+#valeurs {
+display: flex;
+justify-content: space-around;
+flex-wrap: nowrap ;
+flex-direction: row;
+align-items: stretch;
+}
 
-.quote-container {
-      margin-top: 50px;    
-      position: relative;
-    }
+.postit1 {
+  transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -webkit-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  -ms-transform: rotate(-4deg);
+}
+
+.postit2 {
+  transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+}
+
+.postit3 {
+  transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -o-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+}
+
+.texte {
+  margin-top: 50px ;    
+}
     
 .note {
-    color: #333;
-    position: relative;
-    width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Satisfy;
-    font-size: 30px;
-    box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
-    }
-    
-.note .author {
-          display: block;
-          margin: 40px 0 0 0;
-          text-align: right;
-    }
-.yellow {
-          background:#d3d3d3 ;
-          -webkit-transform: rotate(2deg);
-          -moz-transform: rotate(2deg);    
-          -o-transform: rotate(2deg);   
-          -ms-transform: rotate(2deg);   
-          transform: rotate(2deg);
-        }
-
-.pin {
-    background-color: #aaa;
-    display: block;
-    height: 32px;
-    width: 2px;
-    position: absolute;
-    left: 50%;
-    top: -16px;
-    z-index: 1;
-                }
-
-.pin:after {
-                    background-color: #808000;
-                    background-image: radial-gradient(50% 50%, circle, hsla(0,0%,100%,.3), hsla(0,0%,0%,.3));
-                    border-radius: 50%;
-                    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1),
-                                inset 3px 3px 3px hsla(0,0%,100%,.2),
-                                inset -3px -3px 3px hsla(0,0%,0%,.2),
-                                23px 20px 3px hsla(0,0%,0%,.15);
-                    content: '';
-                    height: 20px;
-                    left: -9px;
-                    position: absolute;
-                    top: -10px;
-                    width: 20px;
-                  }           
-                  
-.pin:before {
-                    background-color: hsla(0,0%,0%,0.1);
-                    box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
-                    content: '';
-                  
-                    height: 24px;
-                    width: 2px;
-                    left: 0;
-                    position: absolute;
-                    top: 8px;
-                  
-                    transform: rotate(57.5deg);
-                    -moz-transform: rotate(57.5deg);
-                    -webkit-transform: rotate(57.5deg);
-                    -o-transform: rotate(57.5deg);
-                    -ms-transform: rotate(57.5deg);
-                  
-                    transform-origin: 50% 100%;
-                    -moz-transform-origin: 50% 100%;
-                    -webkit-transform-origin: 50% 100%;
-                    -ms-transform-origin: 50% 100%;
-                    -o-transform-origin: 50% 100%;
-                  }
-
-
-
-.post_it_div{display:table;background-color:#b0c4de;
-                    -webkit-box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.5);        
-                    box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.5);
-                
-                    -moz-transform-origin: 15px 15px;
-                    -webkit-transform-origin: 15px 15px;
-                    -o-transform-origin: 15px 15px;
-                    -ms-transform-origin: 15px 15px;
-                    transform-origin: 15px 15px;
-                
-                    -moz-transform: rotate(15deg);
-                    -webkit-transform: rotate(15deg);
-                    -o-transform: rotate(15deg);
-                    -ms-transform: rotate(15deg);
-                    transform: rotate(15deg);}
-                
-                .post_it_message{font-family: "Budhrg"; padding: 10px; color: black; font-size: 42px;}
-                
-                .pin_top{position:absolute; margin-left: -5px; width: 20px; height: 20px;
-                    -moz-border-radius: 10px;
-                    -webkit-border-radius: 10px;
-                    border-radius: 10px;
-                    -webkit-box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-                    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
-                    background: #556b2f ; /* Old browsers */
-                    background: -moz-radial-gradient(center, ellipse cover, #556b2f 	 4%, #6b8e23 81%); /* FF3.6+ */
-                    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(4%,#556b2f 	), color-stop(81%,#6b8e23)); /* Chrome,Safari4+ */
-                    background: -webkit-radial-gradient(center, ellipse cover,  #556b2f 	 4%,#6b8e23 81%); /* Chrome10+,Safari5.1+ */
-                    background: -o-radial-gradient(center, ellipse cover,  #556b2f 	 4%,#6b8e23 81%); /* Opera 12+ */
-                    background: -ms-radial-gradient(center, ellipse cover,  #556b2f 	 4%,#6b8e23 81%); /* IE10+ */
-                    background: radial-gradient(ellipse at center,  #5c5e5a 	 4%,#6b8e23 81%); /* W3C */
-                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#556b2f', endColorstr='#6b8e23',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */}
-                
-                .pin_bottom{width: 30px; height: 30px;background: #808000; 
-                    -moz-border-radius: 15px;
-                    -webkit-border-radius: 15px;
-                    border-radius: 15px;
-                    -webkit-box-shadow:  1px 3px 1px 1px rgba(0, 0, 0, 0.5);
-                    box-shadow:  1px 3px 1px 1px rgba(0, 0, 0, 0.5);}
-                .post_it_main{float: center; margin-right: -50px; margin-left: 52px;}
-                .post_it_div:hover{
-                    -moz-transform-origin: 15px 15px;
-                    -webkit-transform-origin: 15px 15px;
-                    -o-transform-origin: 15px 15px;
-                    -ms-transform-origin: 15px 15px;
-                    transform-origin: 15px 15px;
-                
-                    -moz-transform: rotate(-15deg);
-                    -webkit-transform: rotate(-15deg);
-                    -o-transform: rotate(-15deg);
-                    -ms-transform: rotate(-15deg);
-                    transform: rotate(-15deg);}
-                .post_it_div:hover >.pin_bottom{z-index: 1;
-                    -webkit-box-shadow:  -1px 3px 1px 1px rgba(0, 0, 0, 0.5);
-                    box-shadow:  -1px 3px 1px 1px rgba(0, 0, 0, 0.5)}
-                .post_it_div:hover >.pin_top{
-                    -moz-transform-origin: 15px 15px;
-                    -webkit-transform-origin: 15px 15px;
-                    -o-transform-origin: 15px 15px;
-                    -ms-transform-origin: 15px 15px;
-                    transform-origin: 15px 15px;
-                
-                    -moz-transform: translate(5px,-6px) rotate(-15deg);
-                    -webkit-transform: translate(5px,-6px) rotate(-15deg);
-                    -o-transform: translate(5px,-6px) rotate(-15deg);
-                    -ms-transform: translate(5px,-6px) rotate(-15deg);
-                    transform: translate(5px,-6px) rotate(-15deg);
-                    
-                    -webkit-box-shadow:  0px 7px 5px 5px rgba(0, 0, 0, 0.5);
-                    box-shadow:  0px 7px 5px 5px rgba(0, 0, 0, 0.5);
-                
-                    z-index: 2;}
+  background:#889781 ;
+  color: #333;
+  width: 150px;
+  padding: 15px;
+  font-family: Satisfy;
+  font-size: 15px;
+  text-align: center;
+  box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
