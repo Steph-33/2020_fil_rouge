@@ -1,0 +1,96 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+
+
+}
+
+
+
+
+
+
+body{
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E5E5E5;
+}
+
+
+.haut{
+    height: 35vw;
+    width: 35vw;
+    background-image: url(pic.png);
+    background-repeat: no-repeat;
+    background-size: 20vw, 20vw;
+    background-position: right;
+    
+
+}
+
+
+
+.childElement2{
+    height: 25vw;
+    width: 25vw;
+    padding-top: 3vw;
+  
+    
+   
+    
+}
+
+
+
+.bas{
+    height: 35vw;
+    width: 35vw;
+    display: flex;justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+.bottom{
+    height: 35vw;
+    width: 100%;
+    background-image: url(pic1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+form{
+    size: 3vw;
+    height: 20vw;
+    width: 100%;
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+
+button {
+    background-color: rgb(36, 128, 214);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 2vw;}
+
+    textarea{
+        height: 7vw;
+        margin-top: 2vw;
+    }
