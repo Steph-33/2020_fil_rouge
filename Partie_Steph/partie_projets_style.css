@@ -5,11 +5,13 @@
 }
 
 #projets {
-    background-color: #889781;
+    background-color:#113E37;
 }
 
 .titre{
-    text-align: center;
+    padding-left: 1%;
+    color: #31796C;
+    text-align: left;
     font-size: 200%;
     font-family: 'Comic Sans MS';
     font-weight: bold;
@@ -30,10 +32,11 @@ figure{
 }
 
 div#slider figure p.name{
+    color: #31796C;
     font-family: 'Comic Sans MS';
     font-size: large;
     font-weight: bold;
-    text-align: right;
+    text-align: left;
 }
 
 div#slider figure img { 
@@ -78,14 +81,15 @@ div#slider figure {
 }
 
 #services {
-    background-color: #889781;
+    background-color:#113E37;
 }
 
 div#scroll figure p.name{
+    color: #31796C;
     font-family: 'Comic Sans MS';
     font-size: large;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
 }
 
 div#scroll figure img { 
@@ -100,6 +104,7 @@ div#scroll figure #origami{
 }
 
 div#scroll figure p{
+    color: #31796C;
     width: 80%;
     padding-top: 4%;
     padding-bottom: 4%;
@@ -113,7 +118,7 @@ footer{
     padding-bottom: 10px;
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #353535;
     color: white;
     text-align: center;
 }

@@ -11,19 +11,18 @@
 			function GenererCarrousel(){
 				
 				var Car_Image_Sources=new Array(
-					"Img/image_1.jpg",
-					"Img/image_2.png",
-					"Img/image_3.jpg",
-					"Img/image_4.jpeg",
-					"Img/image_5.jpg",
-					"Img/image_6.jpeg",
-					"Img/image_7.jpg"
+					"Img/image_0.png",
+					"Img/image_01.png",
+					"Img/image_02.png",
+					"Img/image_03.png",
+					"Img/image_04.png",
+					"Img/image_05.png",
+					"Img/image_06.png"
 				);
 				Caroussel=new Carroussel_Rotation(document.getElementById('Carousel_Menu'),Car_Image_Sources);
 				Caroussel.RedimentionnerCalque(0); //Ajuste le calque � la taille maximal  de l'image la plus grande
 				Caroussel.Definir_Vitesse(100); //Vitesse de rotation des photos (par d�fault 50ms)
-				Caroussel.Vitesse_Changement_Images(2); //Vitesse de modifications de la taille des photos (par d�fault 5pixels)
-				// Caroussel.Definir_Vitesse_Fondu(0.01); //Vitesse du fondu
+				Caroussel.Vitesse_Changement_Images(1.5); //Vitesse de modifications de la taille des photos (par d�fault 5pixels)
 			}
 		</script>
 		<link rel="stylesheet" href="JS/Rotation.css">
@@ -36,17 +35,17 @@
 			Ils nous ont fait confiance...
 		</div>
 		<div id="slider">
-			<div class="box">
+			<!--<div class="box">
 				<div id="origami1">
 				<img src="Img/Origami.png" alt="">
 				</div>
-			</div>  
+			</div>-->  
 			<div id="Carousel_Menu">&nbsp;</div>
-			<div class="box">
+			<!--<div class="box">
 				<div id="origami2">
 				<img src="Img/Origami.png" alt="">
 				</div>
-			</div>
+			</div>-->
 		</div>
 		</center>
 		<section id="services">
@@ -70,12 +69,7 @@
 					<p class="name">Booster votre visibilité</p>  
 					<img src="Img/image_site_12.jpg" alt="">
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
-				  </div>
-				  <div class="box">
-					<div id="origami">
-					  <img src="Img/Origami.png" alt="">
-					</div>
-				  </div>  
+				  </div> 
 				</figure>
 			  </div>
 			</div>
