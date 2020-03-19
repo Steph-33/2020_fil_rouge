@@ -5,18 +5,36 @@
 }
 body {
     background-color: #EBD8C2;
-}
-section {
-    width: 80vw ;
-    position: absolute;
-    right: 0;
-    padding: 5% 10%;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;   
+    color:#1C5850;   
+   
+}
+main {
+    display: flex;
+    flex-direction: column;
+    
+}
+section {
+    /*width: 80vw ;*/
+    /*position: absolute;*/
+    right: 0;
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end; 
+    width: 100vw;
+   
+    
+}
+.section_container {
+    width: 80vw;
+    display: flex;
+    justify-content: flex-end;
 }
 .red {
-    /*border: 2px solid red;*/
+   /*border: 2px solid red;*/
 }
 
 /* partie HEADER */
@@ -47,26 +65,24 @@ li{
 }
 nav a {
     text-decoration: none;
-    color: black;
+    color: #1C5850;
 }
 nav a:hover {
-    border-bottom: 2px solid #246B61;
-    color: #246B61;
+    border-bottom: 2px solid #1C5850;
+    color: #113E37;
 }
-
-/* section about us main page */
 .ORIGAMI {
     width: auto;
     height: 85%;
 }
-
+/* section a propos page d'accueil */
 #us {
     height: 100vh;
-    
+    position: relative;
+    left: 0;
 }
 #us p {
     width: 35%;
-    font-family: Arial, Helvetica, sans-serif; 
     margin-left: 30%;
     font-size: 20px;
 }
@@ -79,28 +95,26 @@ nav a:hover {
     font-weight: bold;
 }
 #us h2 {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     margin-top: 20%;
 }
 .boximg img {
-    height: 100%;
+    height: 50%;
     margin-bottom: 30%;
 }
 .colorform {
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     background-color: #246B61;
     position: absolute;
     bottom: 10%;
-    left: 16%;
+    left: 26%;
     z-index: -2;
 }
 
-/* page  about us */
+/* page  about-us.html */
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
     display: inline-block;
     font-size: 40px;
     margin-bottom: 2%;
@@ -109,7 +123,6 @@ h1 {
 #about_us {
     display: flex;
     flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
     color: #246B61;
 }
 .container_leftsideimg {
@@ -131,7 +144,7 @@ h1 {
     height: 100%;
 }
 .fiche_leftsideimg {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -139,7 +152,7 @@ h1 {
     padding: 2% 0;
 }
 .fiche_rightsideimg {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -149,41 +162,134 @@ h1 {
 
 #about_us h3 {
     background-color: #5C7773;
-    padding: 2% 22%;
-    font-size: 30px;  
+    color:#113E37;
+    width: 100%;
+    padding: 3% 0;
+    font-size: 30px;
+    text-align: center;  
 }
+
 .container_leftsideimg h2 {
     align-self:flex-end;
     position: relative;
     bottom: 150px;
     right: 130px;
+    font-size: 36px;
     
 }
 
-#projets{
-    background-color: #E8BA50;
-}
 
+/*---------------- Steph's part -------------*/
+#projets {
+    background-color: #113E37;
+    height:100vh;
+    overflow-x: hidden;
+}
+#slider p {
+    color: #31796C;
+}
 .titre{
     text-align: center;
     font-size: 200%;
-    font-family: 'Comic Sans MS';
     font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
-#photos{
+figure{
     display: flex;
-    overflow-x: scroll;
-    padding: 1rem 0;
+    width: 100%;
 }
 
-img{
-    height: 180px;
-    width: 300px;
+.box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#slider figure p.name{
+    font-size: large;
+    font-weight: bold;
+    text-align: right;
+}
+
+div#slider figure img { 
+    min-height: 180px; 
+    /*padding-left: 10px;*/
+    padding-right: 40px;
+    /*border-radius: 8%;*/
+}
+
+#origami{
+    padding-right: 75%;
+}
+
+div#slider figure p{
+    width: 80%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+}
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -100%; }
+    70% { left: 0%; }
+    75% { left: 0%; }
+    95% { left: 0%; }
+    100% { left: 0%; }
+  }
+
+div#slider figure {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    animation: 30s slidy infinite;
+}
+
+#services {
+    background-color: #889781;
+    
+}
+
+div#scroll figure p.name{
+    font-size: large;
+    font-weight: bold;
+    text-align: right;
+}
+
+div#scroll figure img { 
+    min-height: 180px; 
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+div#scroll figure #origami{
+    padding-right: 90%;
+}
+
+div#scroll figure p{
+    width: 80%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
 }
 
 footer{
-    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
     width: 100%;
     background-color: black;
     color: white;
