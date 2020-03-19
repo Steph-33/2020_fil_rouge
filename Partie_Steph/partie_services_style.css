@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#services {
+    background-color:#E5E5E5;
+    background-image: url(images_steph/Image.png);
+    background-repeat: no-repeat;
+    background-size: 60vw, 60vw;
+    background-position: right;
+}
+
+.titre{
+    padding-left: 1%;
+    color: #31796C;
+    text-align: left;
+    font-size: 300%;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 10%;
+}
+
+div#scroll figure p.name{
+    color: #31796C;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+div#scroll figure img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 180px; 
+    border-radius: 20px 20px 20px 20px;
+}
+
+div#scroll figure p{
+    color: #31796C;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+    font-family: 'Amatic SC', cursive;
+    font-size: 150%;
+    padding-top: 1%;
+    padding-bottom: 10%;
+}
+
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: #353535;
+    color: white;
+    text-align: center;
+}
+
+i{
+    padding:0.5%;
+}

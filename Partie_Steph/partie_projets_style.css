@@ -13,7 +13,7 @@
     color: #31796C;
     text-align: left;
     font-size: 200%;
-    font-family: 'Comic Sans MS';
+    font-family: 'Amatic SC', cursive;
     font-weight: bold;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -44,10 +44,6 @@ div#slider figure img {
     padding-left: 10px;
     padding-right: 10px;
     border-radius: 20px 20px 20px 20px;
-}
-
-#origami{
-    padding-right: 75%;
 }
 
 div#slider figure p{
@@ -99,10 +95,6 @@ div#scroll figure img {
     border-radius: 20px 20px 20px 20px;
 }
 
-div#scroll figure #origami{
-    padding-right: 90%;
-}
-
 div#scroll figure p{
     color: #31796C;
     width: 80%;
@@ -121,4 +113,8 @@ footer{
     background-color: #353535;
     color: white;
     text-align: center;
+}
+
+i{
+    padding:0.5%;
 }
