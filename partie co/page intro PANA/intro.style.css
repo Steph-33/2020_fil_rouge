@@ -71,11 +71,4 @@
     .btn:hover {
         opacity:0.7;
     }
-
-    .déco {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-    }
     
