@@ -34,8 +34,7 @@ figure{
 #Carousel_Menu{
     padding-top: 5%;
     position:relative; 
-    width: 1500px;
-    height: 750px; 
+    width: 100%;
     padding-left: 60%;
 }
 
