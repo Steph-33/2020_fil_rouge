@@ -8,16 +8,11 @@
     background-color: #113E37;
 }
 
-#slider{
-    display: flex;
-    flex-direction: row;
-}
-
 .titre{
     color: #31796C;
     text-align: left;
     font-size: 200%;
-    font-family: 'Amatic SC', cursive;
+    font-family: 'Neucha', cursive;
     font-weight: bold;
     padding-top: 2%;
     padding-left: 1%;
@@ -44,24 +39,14 @@ figure{
     padding-left: 60%;
 }
 
-#origami1{
-    padding-bottom: 10%;
-    margin-left: -25%;
-}
-
-#origami2{
-    padding-bottom: 10%;
-    margin-right: -25%;
-}
-
 #services {
     background-color: #113E37;
 }
 
 div#scroll figure p.name{
     color: #31796C;
-    font-family: 'Comic Sans MS';
-    font-size: large;
+    font-family: 'Neucha', cursive;
+    font-size: 1.4em;
     font-weight: bold;
     text-align: center;
 }
@@ -80,6 +65,7 @@ div#scroll figure p{
     padding-bottom: 4%;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Roboto Slab', serif;
     text-align: justify;
 }
 
