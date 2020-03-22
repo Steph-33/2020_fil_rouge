@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PANAgency</title>
+    <link rel="stylesheet" href='./main.css' />
+    
+    <SCRIPT type="text/javascript" src="./Carroussel_rotation.js"></script>  
+    <SCRIPT type="text/javascript">
+        
+        var Caroussel;
+        function GenererCarrousel(){
+            
+            var Car_Image_Sources=new Array(
+                "./Img/Image_1.png",
+                "./Img/Image_2.png",
+                "./Img/Image_3.png",
+                "./Img/Image_4.png",
+                "./Img/Image_5.png",
+                "./Img/Image_6.png",
+                "./Img/Image_7.png"
+            );
+            Caroussel=new Carroussel_Rotation(document.getElementById('Carousel_Menu'),Car_Image_Sources);
+            Caroussel.RedimentionnerCalque(0); //Ajuste le calque � la taille maximal  de l'image la plus grande
+            Caroussel.Definir_Vitesse(100); //Vitesse de rotation des photos (par d�fault 50ms)
+            Caroussel.Vitesse_Changement_Images(1.5); //Vitesse de modifications de la taille des photos (par d�fault 5pixels)
+        }
+    </script>
+    <link rel="stylesheet" href="JS/Rotation.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1dac55b7a2.js" crossorigin="anonymous"></script>
+</head>
+<body onload="javascript:GenererCarrousel();">
+
+    <!-- CONTAINER GLOBAL -->
+    <div class='container-global'>
+        <!-- BOX SECTION DE LA PAGE (Coline, Steph, Lynn, Gul Agha...) -->
+
+
+        <div class='section-box'>
+
+            <!----------------------------------- Barre de navigation ---------------------------------->
+            <div class='nav'>
+                <header class="blue">
+                    <div class="logo_box blue">
+                        <img class="LOGO" src="./images/logo vert.png" alt="logo agence">
+                    </div>
+                    
+              
+                    <nav class="red" > 
+                      <ul class="red">
+                        <li> <a href="about_us.html">A propos</a> </li>
+                        <li> <a href="#projets">Projets</a> </li>
+                        <li> <a href="#charte">Charte</a> </li>
+                        <li> <a href="#services">Services</a> </li>
+                        <li> <a href="partie_contact.html">Contact</a> </li>
+                      </ul>
+              
+                      <img class="ORIGAMI red" src="./images/origami_sans-blanc.png" alt="Chaine origami">
+                    </nav>
+                  </header>
+            </div>
+
+
+            <!------------------------ Coté gauche de la page -------------------------------------->
+            <div class='side-left'>
+                <section id="us_leftside"></section>
+                <section id="projets_leftside"></section>
+                <section id="charte_leftside"></section>
+                <section id="services_leftside"></section>
+                <section id="footer_leftside"></section>
+
+                
+
+
+
+            </div>
+
+            <!----------------------- Coté droit de la page ------------------------------------>
+            <div class='side-right'>
+
+                    <!-- SECTION LYNN ___ ABOUT US  -->
+                    <section id="us" class="my_main_section red">
+
+                        <div class="section_container blue">
+                                <div class="boximg red">
+                                <h2 class="h2_commun">A propos</h2>
+                                <img src="./images/quote.png" alt="Illustration guillemets">
+                                <div class="colorform"></div>
+                                </div>
+
+                                <p class="red"> <span>L</span>orem ipsum dolor sit amet consectetur, adipisicing elit. Quas omnis, tenetur quos perferendis molestiae mollitia error dicta odio, nobis iusto deserunt eveniet in reprehenderit reiciendis nam esse ab sapiente consequuntur <br> <span class="suspensionvert">...</span> </p>
+                        </div>     
+
+                    </section>    
+
+                    <!-- SECTION STEPH ___ PROJET  -->
+                   
+                        
+                            <center id="projets" class="my_main_section red">
+                                <h2 class="titre">
+                                    Ils nous ont fait confiance...
+                                </h2>
+                                <div>
+                                    <div id="Carousel_Menu">&nbsp;</div>
+                                </div>
+                            </center>
+                    
+                            
+
+                    <!-- SECTION COLINE ___ CHARTE -->
+
+                    <section id="charte" class="my_main_section">
+            
+
+                        <div class="section_container blue">
+                            <section id="titre">
+                                <h2> Quand on parle de valeurs chez PANAgencie… </h2>
+                            </section>
+    
+                            <section id="valeurs">
+                            <!-- 1e post it -->
+                                <section class="postit1">
+                                    <div class="texte">    
+                                        <blockquote class="note">
+                                            <h3>Qualité</h3>   
+                                            <p>Pour nous, porter une attention particulière à chaque client, blablablablabla balbalbalbalab.</p>     
+                                        </blockquote>
+                                    </div>
+                            </section>
+    
+                            <!-- 2e post it -->
+                                <section class="postit2">
+                                    <div class="texte">    
+                                        <blockquote class="note">
+                                            <h3>Éco-responsabilité</h3>   
+                                            <p>Pour nous, le monde de demain commence aujourd'hui, blablablablabla balbalbalbalab.</p>     
+                                        </blockquote>
+                                    </div>
+                                </section>
+    
+                            <!-- 3e post it -->
+                                <section class="postit3">
+                                    <div class="texte">     
+                                        <blockquote class="note">
+                                            <h3>Rencontre</h3>   
+                                            <p>Chez nous, les clients forment une famille : il s'appuient les uns sur les autre pour faire avancer leurs projet, parce que toutes les idées sont bonnes et mérites d'être reconnues à leur juste valeur. blablablablabla balbalbalbalab.</p>     
+                                        </blockquote>
+                                    </div>
+                                </section>
+                        </div>
+                        
+
+                    </section>
+
+                    <script src="charte.js"></script>
+
+                    <!-- SECTION STEPH & GUL AGHA___ SERVICES  -->
+                        <section id="services" class="my_main_section red">
+                            <div>
+                                <div class="titre">
+                                    Nos différents services...
+                                </div>
+
+                                <div id="scroll">
+                                        <figure>
+                                        <div class="box">
+                                            <p class="name">Réaliser votre site de vente en ligne</p>
+                                            <img src="Img/Image_8.png" alt="">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
+                                        </div>
+
+                                        <div class="box">
+                                            <p class="name">Réaliser votre application mobile</p>
+                                            <img src="Img/Image_9.png" alt="">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
+                                        </div>
+
+                                        <div class="box">
+                                            <p class="name">Booster votre visibilité</p>  
+                                            <img src="Img/Image_10.jpg" alt="">
+                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
+                                        </div> 
+                                        </figure>
+                                </div>
+                            </div>
+                        </section>
+                          
+
+                <!-- SECTION STEPH___ FOOTER  -->
+                <footer id="footer">
+                    
+                    <div class="copyright blue">
+                    COPYRIGHT 2020 &copy; Co.-Lynn-Gul-Steph
+                    </div>
+
+                    <div class="logos">
+                        <i class="fas fa-at"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                </footer>
+
+                
+            </div> <!-- Coté droi de la page -->
+
+        </div> <!--section-box -->
+    </div><!-- ./CONTAINER GLOBAL -->
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+</body>
+</html>
