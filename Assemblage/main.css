@@ -571,16 +571,20 @@ i{
     }
     /* ------ base de l'animation des post-it (a modifier)----*/
     .note:hover {
-        animation: mouvement 2s ease forwards;
-    }
-    @keyframes mouvement {  
+        background-color:rgba(49,121,108, 0.95);
+        animation: mouvement 0.4s ease forwards;
+      }
+
+      @keyframes mouvement {  
         0% {
-            transform: skewX(0deg);
+            transform: rotate(0deg);
         }
+        50% {
+          transform: rotate(2deg);
+      }
         100% {
-            transform: skewX(10deg);
+            transform: rotate(1deg);
         }
-    }
     /* ------^ base de l'animation des post-it (a modifier)^----*/
 
     /* ---------- CONTACT partie GUL AGHA -----------*/
