@@ -14,7 +14,7 @@ html {
 }
 p, label {
     color: #31796C;
-    font-size: 24px;
+    font-size: 22px;
 }
 h2 {
     font-family: 'Neucha', cursive;
@@ -550,7 +550,7 @@ figure{
 }
 
 /*----- SERVICES --------*/
-div#scroll figure p.name{
+div #scroll figure p.name{
     color: #31796C;
     font-family: 'Neucha', cursive;
     font-size: 1.4em;
@@ -558,21 +558,20 @@ div#scroll figure p.name{
     text-align: center;
 }
 
-div#scroll figure img { 
+div #scroll figure img { 
     min-height: 180px; 
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 20px 20px 20px 20px;
 }
 
-div#scroll figure p{
+div #scroll figure p{
     color: #31796C;
     width: 80%;
     padding-top: 4%;
     padding-bottom: 4%;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: 'Roboto Slab', serif;
     text-align: justify;
 }
 
@@ -595,16 +594,16 @@ i{
 /* ------------- CHARTE partie COLINE --------------*/
     #titre {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
     }
 
     /* post it */
     #valeurs {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap ;
-    flex-direction: row;
-    align-items: stretch;
+        display: flex;
+        justify-content: stretch ;
+        flex-wrap: nowrap ;
+        flex-direction: row;
+        align-items: stretch;
     }
 
     .postit1 {
@@ -637,18 +636,19 @@ i{
         
     .note {
         background:#889781 ;
-        color: #333;
         width: 350px;
         padding: 15px;
-        font-family: Satisfy;
-        font-size: 15px;
+        line-height: 1.7em;
         text-align: center;
         box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
-
     }
-    /* ------ base de l'animation des post-it (a modifier)----*/
+    .police{
+        color: #363C33;
+    }
+
+    /* ------ animation des post-it----*/
     .note:hover {
-        background-color:rgba(49,121,108, 0.95);
+        background-color:rgba(108,120,103, 0.95);
         animation: mouvement 0.4s ease forwards;
       }
 
@@ -663,7 +663,7 @@ i{
             transform: rotate(1deg);
         }
     }
-    /* ------^ base de l'animation des post-it (a modifier)^----*/
+    /* ------^ animation des post-it ^----*/
 
     /* ---------- CONTACT partie GUL AGHA -----------*/
     .haut{
