@@ -206,11 +206,17 @@ figure{
 
 #link_services{
     text-decoration: none;
+    color: #31796C;
+    text-align: left;
+    font-size: 100%;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-left: 1%;
 }
 
-#nos_services .titre:hover {
-    background-color: #E5E5E5;
-    color:#1C5850;
+#nos_services #link_services:hover {
+    color:#E5E5E5;
     transition-duration: 1s;
     transition-delay: 0.2s; /* Démarre au bout de 0,4s */
 }
@@ -222,6 +228,7 @@ div#scroll figure a.name{
     font-size: 1.5em;
     font-weight: bold;
     text-align: center;
+    margin-top: 12%;
     padding-top: 3%;
     padding-bottom: 2%;
 }
@@ -286,12 +293,21 @@ i{
     padding-bottom: 5%;
 }
 
-#liste a{
+#liste{
     display: flex;
     flex-direction: column;
+}
+
+#liste .origami{
+    width: 3%;
+    height: 3%;
+    margin-left: 65%;
+}
+
+#liste a{
     text-decoration: none;
     padding-left: 70%;
-    padding-bottom: 2%;
+    padding-bottom: -2%;
     font-family: 'Neucha', cursive;
     font-weight: bold;
     font-size: 150%;
