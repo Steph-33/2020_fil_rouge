@@ -409,127 +409,22 @@ h1 {
 
 
 /*---------------- Steph's part -------------*/
-#projets {
+/* ------------- PARTIE PROJETS --------------*/
+#nos_projets {
     background-color: #113E37;
-    height:100vh;
-    
-    overflow-x: hidden;
-}
-#slider p {
-    color: #31796C;
-}
-.titre{
-    text-align: center;
-    font-size: 200%;
-    font-weight: bold;
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
-figure{
-    display: flex;
-    width: 100%;
-}
-
-.box{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-div#slider figure p.name{
-    font-size: large;
-    font-weight: bold;
-    text-align: right;
-}
-
-div#slider figure img { 
-    min-height: 180px; 
-    /*padding-left: 10px;*/
-    padding-right: 40px;
-    /*border-radius: 8%;*/
-}
-
-#origami{
-    padding-right: 75%;
-}
-
-div#slider figure p{
-    width: 80%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
-}
-
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -100%; }
-    70% { left: 0%; }
-    75% { left: 0%; }
-    95% { left: 0%; }
-    100% { left: 0%; }
-  }
-
-div#slider figure {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    animation: 30s slidy infinite;
-}
- 
-div#scroll figure p.name{
-    font-size: large;
-    font-weight: bold;
-    text-align: right;
-}
-
-div#scroll figure img { 
-    min-height: 180px; 
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 20px 20px 20px 20px;
-}
-
-div#scroll figure #origami{
-    padding-right: 90%;
-}
-
-div#scroll figure p{
-    width: 80%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
-}
-
-footer{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-
-/* ------------- PROJETS, SERVICES et FOOTER --------------*/
 .titre{
     color: #31796C;
     text-align: left;
+    font-size: 200%;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
     padding-top: 2%;
     padding-left: 1%;
     padding-bottom: 4%;
 }
+
 figure{
     display: flex;
     width: 100%;
@@ -549,33 +444,179 @@ figure{
     padding-left: 60%;
 }
 
-/*----- SERVICES --------*/
-div #scroll figure p.name{
-    color: #31796C;
-    font-family: 'Neucha', cursive;
-    font-size: 1.4em;
-    font-weight: bold;
-    text-align: center;
+#nos_services {
+    background-color: #113E37;
 }
 
-div #scroll figure img { 
+#link_services{
+    text-decoration: none;
+    color: #31796C;
+    text-align: left;
+    font-size: 100%;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-left: 1%;
+}
+
+#nos_services #link_services:hover {
+    color:#E5E5E5;
+}
+
+div#scroll figure a.name{
+    color: #31796C;
+    text-decoration: none;
+    font-family: 'Neucha', cursive;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 12%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+div#scroll figure a.name:hover{
+    color: #E5E5E5;
+}
+
+div#scroll figure img { 
     min-height: 180px; 
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
     border-radius: 20px 20px 20px 20px;
 }
 
-div #scroll figure p{
+div#scroll figure p{
     color: #31796C;
     width: 80%;
     padding-top: 4%;
     padding-bottom: 4%;
     padding-left: 10px;
     padding-right: 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2em;
     text-align: justify;
 }
 
-/*----- SERVICES --------*/
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: #353535;
+    color: white;
+    text-align: center;
+}
+
+/* ------------- PARTIE SERVICES --------------*/
+#partie_services {
+    background-color:#E5E5E5;
+    background-image: url(images/fond_1.png);
+    background-repeat: no-repeat;
+    background-size: 60vw, 60vw;
+    background-position: right;
+}
+
+.titre{
+    padding-left: 1%;
+    color: #31796C;
+    text-align: left;
+    font-size: 300%;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+#liste{
+    display: flex;
+    flex-direction: column;
+}
+
+#liste .right{
+    display: flex;
+    flex-direction: row;
+}
+
+#liste .origami{
+    width: 3%;
+    height: 3%;
+    margin-left: 65%;
+}
+
+#liste .right a{
+    text-decoration: none;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    font-size: 140%;
+    color: #31796C;
+}
+
+#liste .right a:hover{
+    color: white;
+}
+
+div#liste_services .fig p.nom{
+    color: #31796C;
+    width: 100%;
+    font-family: 'Neucha', cursive;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+div#liste_services .fig img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 180px; 
+    border-radius: 20px 20px 20px 20px;
+}
+
+div#liste_services .fig p{
+    color: #31796C;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    font-size: 150%;
+    padding-top: 1%;
+    padding-bottom: 8%;
+}
+
+#bottom_right{
+    display: flex;
+    flex-direction: row;
+    margin-top: -4%;
+    padding-bottom: 5%;
+}
+
+#bottom_right .origami{
+    width: 3%;
+    height: 3%;
+    margin-left: 65%;
+}
+
+#bottom_right a{
+    text-decoration: none;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    font-size: 140%;
+    color: #31796C;
+}
+
+#liste .right a:hover{
+    color: white;
+}
+
+/* ------------- PARTIE FOOTER --------------*/
 footer{
     padding-top: 10px;
     padding-bottom: 10px;

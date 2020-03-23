@@ -13,13 +13,13 @@
         function GenererCarrousel(){
             
             var Car_Image_Sources=new Array(
-                "./Img/Image_1.png",
-                "./Img/Image_2.png",
-                "./Img/Image_3.png",
-                "./Img/Image_4.png",
-                "./Img/Image_5.png",
-                "./Img/Image_6.png",
-                "./Img/Image_7.png"
+                "images/projets_1.png",
+				"images/projets_2.png",
+				"images/projets_3.png",
+				"images/projets_4.png",
+				"images/projets_5.png",
+				"images/projets_6.png",
+				"images/projets_7.png"
             );
             Caroussel=new Carroussel_Rotation(document.getElementById('Carousel_Menu'),Car_Image_Sources);
             Caroussel.RedimentionnerCalque(0); //Ajuste le calque � la taille maximal  de l'image la plus grande
@@ -166,49 +166,41 @@
                     <script src="charte.js"></script>
 
                     <!-- SECTION STEPH & GUL AGHA___ SERVICES  -->
-                        <section id="services" class="my_main_section red">
+                        <section id="nos_services" class="my_main_section red">
                             <div>
-                                <div class="titre">
-                                    Nos différents services...
-                                </div>
-
-                                <div id="scroll">
-                                        <figure>
-                                        <div class="box">
-                                            <p class="name">Réaliser votre site de vente en ligne</p>
-                                            <img src="Img/Image_8.png" alt="">
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
-                                        </div>
-
-                                        <div class="box">
-                                            <p class="name">Réaliser votre application mobile</p>
-                                            <img src="Img/Image_9.png" alt="">
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
-                                        </div>
-
-                                        <div class="box">
-                                            <p class="name">Booster votre visibilité</p>  
-                                            <img src="Img/Image_10.jpg" alt="">
-                                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
-                                        </div> 
-                                        </figure>
-                                </div>
+                                <h2><a href="partie_services.html" id="link_services">Nos différents services...</a></h2>
+                                  <div id="scroll">
+                                    <figure>
+                                      <div class="box">
+                                        <a href="partie_services.html#site" class="name">Réaliser votre site de vente en ligne</a>
+                                        <img src="images/services_1.png" alt="">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
+                                      </div>
+                                      <div class="box">
+                                        <a href="partie_services.html#appli" class="name">Réaliser votre application mobile</a>
+                                        <img src="images/services_2.png" alt="">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
+                                      </div>
+                                      <div class="box">
+                                        <a href="partie_services.html#boost" class="name">Booster votre visibilité</a>  
+                                        <img src="images/services_3.jpg" alt="">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum exercitationem, blanditiis.</p>
+                                      </div> 
+                                    </figure>
+                                  </div>
                             </div>
                         </section>
                           
-
                 <!-- SECTION STEPH___ FOOTER  -->
-                <footer id="footer">
-                    
-                    <div class="copyright blue">
-                    COPYRIGHT 2020 &copy; Co.-Lynn-Gul-Steph
-                    </div>
-
-                    <div class="logos">
+                <footer id="footer">                    
+                    <div>
                         <i class="fas fa-at"></i>
                         <i class="fab fa-facebook"></i>
                         <i class="fab fa-twitter-square"></i>
                         <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div>
+                      COPYRIGHT 2020 &copy; Co.-Lynn-Gul-Steph
                     </div>
                 </footer>
 

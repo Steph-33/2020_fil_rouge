@@ -121,7 +121,7 @@ var Carroussel_Rotation= function(Calque,tab){
 					}
 					ImageOrdre[ImageOrdre.length-1]=last;
 				}
-				//on diminu l'image suivante et on la dï¿½cale
+				//on diminu l'image suivante et on la décale
 				RedimensionnerImage(ImageOrdre[1],parseInt(CW_I[ImageOrdre[1]].style.width)-(0.5*Diminution));
 				CW_I[ImageOrdre[1]].style.left=parseInt(CW_I[ImageOrdre[0]].style.left)+parseInt(CW_I[ImageOrdre[0]].style.width)+"px";
 				//on augmente la 3em image
