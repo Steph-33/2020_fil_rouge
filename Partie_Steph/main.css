@@ -217,8 +217,6 @@ figure{
 
 #nos_services #link_services:hover {
     color:#E5E5E5;
-    transition-duration: 1s;
-    transition-delay: 0.2s; /* Démarre au bout de 0,4s */
 }
 
 div#scroll figure a.name{
@@ -235,8 +233,6 @@ div#scroll figure a.name{
 
 div#scroll figure a.name:hover{
     color: #E5E5E5;
-    transition-duration: 1s;
-    transition-delay: 0.1s; /* Démarre au bout de 0,4s */
 }
 
 
@@ -298,20 +294,29 @@ i{
     flex-direction: column;
 }
 
+#liste .right{
+    display: flex;
+    flex-direction: row;
+}
+
 #liste .origami{
     width: 3%;
     height: 3%;
     margin-left: 65%;
 }
 
-#liste a{
+#liste .right a{
     text-decoration: none;
-    padding-left: 70%;
-    padding-bottom: -2%;
     font-family: 'Neucha', cursive;
     font-weight: bold;
-    font-size: 150%;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    font-size: 140%;
     color: #31796C;
+}
+
+#liste .right a:hover{
+    color: white;
 }
 
 div#liste_services .fig p.nom{
@@ -345,6 +350,33 @@ div#liste_services .fig p{
     padding-bottom: 8%;
 }
 
+#bottom_right{
+    display: flex;
+    flex-direction: row;
+    margin-top: -4%;
+    padding-bottom: 5%;
+}
+
+#bottom_right .origami{
+    width: 3%;
+    height: 3%;
+    margin-left: 65%;
+}
+
+#bottom_right a{
+    text-decoration: none;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    font-size: 140%;
+    color: #31796C;
+}
+
+#liste .right a:hover{
+    color: white;
+}
+
 footer{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -358,9 +390,3 @@ footer{
 i{
     padding:0.5%;
 }
-
-
-
-
-
-
