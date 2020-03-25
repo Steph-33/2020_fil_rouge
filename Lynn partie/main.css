@@ -14,7 +14,7 @@ html {
 }
 p, label {
     color: #31796C;
-    font-size: 20px;
+    font-size: 18px;
 }
 h2 {
     font-family: 'Neucha', cursive;
@@ -33,7 +33,7 @@ h3 {
     color: #113E37;
 }
 .my_main_section {
-    padding: 10% 5% 10% 10%;
+    padding: 10% 5% 10% 5%;
 }
 
 /* -------------^ Règlès communes ^--------------*/
@@ -153,7 +153,7 @@ nav a:hover {
     height: 100vh;
 }
 
-#services {
+#nos_services {
     background-color: #113E37;
     height: 100vh; 
 }
@@ -401,127 +401,22 @@ h1 {
 
 
 /*---------------- Steph's part -------------*/
-#projets {
+/* ------------- PARTIE PROJETS --------------*/
+#nos_projets {
     background-color: #113E37;
-    height:100vh;
-    
-    overflow-x: hidden;
-}
-#slider p {
-    color: #31796C;
-}
-.titre{
-    text-align: center;
-    font-size: 200%;
-    font-weight: bold;
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
-figure{
-    display: flex;
-    width: 100%;
-}
-
-.box{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-div#slider figure p.name{
-    font-size: large;
-    font-weight: bold;
-    text-align: right;
-}
-
-div#slider figure img { 
-    min-height: 180px; 
-    /*padding-left: 10px;*/
-    padding-right: 40px;
-    /*border-radius: 8%;*/
-}
-
-#origami{
-    padding-right: 75%;
-}
-
-div#slider figure p{
-    width: 80%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
-}
-
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -100%; }
-    70% { left: 0%; }
-    75% { left: 0%; }
-    95% { left: 0%; }
-    100% { left: 0%; }
-  }
-
-div#slider figure {
-    position: relative;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    left: 0;
-    animation: 30s slidy infinite;
-}
- 
-div#scroll figure p.name{
-    font-size: large;
-    font-weight: bold;
-    text-align: right;
-}
-
-div#scroll figure img { 
-    min-height: 180px; 
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 20px 20px 20px 20px;
-}
-
-div#scroll figure #origami{
-    padding-right: 90%;
-}
-
-div#scroll figure p{
-    width: 80%;
-    padding-top: 4%;
-    padding-bottom: 4%;
-    padding-left: 10px;
-    padding-right: 10px;
-    text-align: justify;
-}
-
-footer{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
-
-
-/* ------------- PROJETS, SERVICES et FOOTER --------------*/
 .titre{
     color: #31796C;
     text-align: left;
+    font-size: 200%;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
     padding-top: 2%;
     padding-left: 1%;
     padding-bottom: 4%;
 }
+
 figure{
     display: flex;
     width: 100%;
@@ -541,34 +436,179 @@ figure{
     padding-left: 60%;
 }
 
-/*----- SERVICES --------*/
-div#scroll figure p.name{
+
+/* Services Landing-Page*/
+figure{
+    width: 100%;
+}
+#link_services{
+    text-decoration: none;
     color: #31796C;
+    text-align: left;
+    font-size: 100%;
     font-family: 'Neucha', cursive;
-    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-left: 1%;
+}
+
+#nos_services #link_services:hover {
+    color:#E5E5E5;
+}
+
+div#scroll figure a.name{
+    color: #31796C;
+    text-decoration: none;
+    font-family: 'Neucha', cursive;
+    font-size: 1.3em;
     font-weight: bold;
     text-align: center;
+    margin-top: 12%;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+div#scroll figure a.name:hover{
+    color: #E5E5E5;
 }
 
 div#scroll figure img { 
     min-height: 180px; 
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 20vw;
+    padding-left: 4%;
+    padding-right: 4%;
     border-radius: 20px 20px 20px 20px;
 }
 
 div#scroll figure p{
     color: #31796C;
-    width: 80%;
+    width: 100%;
     padding-top: 4%;
     padding-bottom: 4%;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-family: 'Roboto Slab', serif;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: justify;
 }
 
-/*----- SERVICES --------*/
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: #353535;
+    color: white;
+    text-align: center;
+}
+
+/* ------------- PARTIE SERVICES --------------*/
+#partie_services {
+    background-color:#CFC7B1;
+    background-image: url(images/fond_1.png);
+    background-repeat: no-repeat;
+    background-size: 60vw, 60vw;
+    background-position: right;
+}
+
+.titre{
+    padding-left: 1%;
+    color: #31796C;
+    text-align: left;
+    font-size: 300%;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+#liste{
+    display: flex;
+    flex-direction: column;
+}
+
+#liste .right{
+    display: flex;
+    flex-direction: row;
+}
+
+#liste .origami{
+    width: 3%;
+    height: 3%;
+    margin-left: 65%;
+}
+
+#liste .right a{
+    text-decoration: none;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    font-size: 140%;
+    color: #31796C;
+}
+
+#liste .right a:hover{
+    color: white;
+}
+
+div#liste_services .fig p.nom{
+    color: #31796C;
+    width: 100%;
+    font-family: 'Neucha', cursive;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2%;
+    padding-bottom: 2%;
+}
+
+div#liste_services .fig img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 180px; 
+    border-radius: 20px 20px 20px 20px;
+}
+
+div#liste_services .fig p{
+    color: #31796C;
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+    font-family: 'Roboto Slab', serif;
+    font-size: 150%;
+    padding-top: 1%;
+    padding-bottom: 8%;
+}
+
+#bottom_right{
+    display: flex;
+    flex-direction: row;
+    margin-top: -4%;
+    padding-bottom: 5%;
+}
+
+#bottom_right .origami{
+    width: 3%;
+    height: 3%;
+    margin-left: 65%;
+}
+
+#bottom_right a{
+    text-decoration: none;
+    font-family: 'Neucha', cursive;
+    font-weight: bold;
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    font-size: 140%;
+    color: #31796C;
+}
+
+#liste .right a:hover{
+    color: white;
+}
+
+/* ------------- PARTIE FOOTER --------------*/
 footer{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -585,77 +625,78 @@ i{
 /* -------------^ PROJETS, SERVICES et FOOTER partie STEPH ^--------------*/
 
 /* ------------- CHARTE partie COLINE --------------*/
-    #titre {
-        display: flex;
-        justify-content: center;
-    }
-
-    /* post it */
-    #valeurs {
+#titre {
     display: flex;
     justify-content: space-around;
+}
+
+/* post it */
+#valeurs {
+    display: flex;
+    justify-content: flex-end;
     flex-wrap: nowrap ;
     flex-direction: row;
     align-items: stretch;
-    }
+}
 
-    .postit1 {
-        transform: rotate(-4deg);
-        -moz-transform: rotate(-4deg);
-        -webkit-transform: rotate(-4deg);
-        -o-transform: rotate(-4deg);
-        -ms-transform: rotate(-4deg);
-    }
+.postit1 {
+    transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+}
 
-    .postit2 {
-        transform: rotate(2deg);
-        -moz-transform: rotate(2deg);
-        -webkit-transform: rotate(2deg);
-        -o-transform: rotate(2deg);
-        -ms-transform: rotate(2deg);
-    }
+.postit2 {
+    transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+}
 
-    .postit3 {
-        transform: rotate(-2deg);
-        -moz-transform: rotate(-2deg);
-        -webkit-transform: rotate(-2deg);
-        -o-transform: rotate(2deg);
-        -ms-transform: rotate(2deg);
-    }
+.postit3 {
+    transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+}
 
-    .texte {
-        margin-top: 50px ;    
-    }
-        
-    .note {
-        background:#889781 ;
-        color: #333;
-        width: 350px;
-        padding: 15px;
-        font-family: Satisfy;
-        font-size: 15px;
-        text-align: center;
-        box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+.texte {
+    margin-top: 50px ;    
+}
+    
+.note {
+    background:#889781 ;
+    width: 24vw;
+    padding: 15px;
+    line-height: 1.7em;
+    text-align: center;
+    box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+.police{
+    color: #363C33;
+}
 
-    }
-    /* ------ base de l'animation des post-it (a modifier)----*/
-    .note:hover {
-        background-color:rgba(49,121,108, 0.95);
-        animation: mouvement 0.4s ease forwards;
-      }
+/* ------ animation des post-it----*/
+.note:hover {
+    background-color:rgba(108,120,103, 0.95);
+    animation: mouvement 0.4s ease forwards;
+  }
 
-      @keyframes mouvement {  
-        0% {
-            transform: rotate(0deg);
-        }
-        50% {
-          transform: rotate(2deg);
-      }
-        100% {
-            transform: rotate(1deg);
-        }
+  @keyframes mouvement {  
+    0% {
+        transform: rotate(0deg);
     }
-    /* ------^ base de l'animation des post-it (a modifier)^----*/
+    50% {
+      transform: rotate(2deg);
+  }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+/* ------^ animation des post-it ^----*/
 
     /* ---------- CONTACT partie GUL AGHA -----------*/
     .haut{
@@ -673,11 +714,27 @@ i{
         padding-top: 3vw;  
     }
     .bas{
-        height: 35vw;
+        height: auto;
         width: 35vw;
         display: flex;justify-content: center;
         flex-direction: column; 
+        display: block;
     } 
+
+    .bottom{
+        height: 35vw;
+        width: 100%;
+        background-image: url(pic1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        color: aliceblue;
+        text-align: center;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    
+    }
+
     form{
         size: 3vw;
         height: 20vw;
@@ -687,16 +744,18 @@ i{
   
     input[type=text], select, textarea{
         width: 100%;
-        padding: 10px;
-        margin-bottom: 3%;
-        border: none;
-        border-bottom: 3px solid #31796C;
-        background: transparent;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
         box-sizing: border-box;
-        font-size: 20px;
-        color: #113E37;
-        
+        resize: vertical;
+        border-top: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        border-bottom: 3px solid #1C5850 ;
+        background-color: #EBD8C2;  
     }
+        
     button {
         display: block;
         width: 100%;
@@ -711,14 +770,34 @@ i{
     }
         
 
-        textarea{
+    textarea{
         height: 7vw;
         margin-top: 2vw;
-        border: 3px solid #31796C;
+    }
 
-            
-        }
+    .mapbox{
+        height: 23.5vw;
+        width: 100%;
+        
+        align-items: flex-end;
+        margin-top: 15vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        overflow: hidden;
+        
+    }
 
+    .textbox{
+        height: 10vw;
+        width: 50%;
+        border: solid #1C5850;
+        align-items: flex-end;
+        margin-top: 2vw;
+        margin-left: 25%;
+        text-align: center;
+    }
 
         /*---- tablette ------*/
     @media screen and (max-width:768px) {
