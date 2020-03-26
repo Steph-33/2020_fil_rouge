@@ -442,7 +442,7 @@ figure{
 }
 
 
-/* Services Landing-Page*/
+/* ----------------------Services Landing-Page---------------------*/
 figure{
     width: 100%;
 }
@@ -515,14 +515,14 @@ footer{
 }
 
 .titre{
-    padding-left: 1%;
-    color: #31796C;
+    padding-left: 25%;
+    color: #113E37;;
     text-align: left;
     font-size: 300%;
     font-family: 'Neucha', cursive;
     font-weight: bold;
-    padding-top: 2%;
-    padding-bottom: 5%;
+    padding-top: 10%;
+    padding-bottom: 1%;
 }
 
 #liste{
@@ -575,12 +575,10 @@ div#liste_services .fig img {
 }
 
 div#liste_services .fig p{
-    color: #31796C;
     width: 30%;
     margin-right: auto;
     margin-left: auto;
     text-align: justify;
-    font-family: 'Roboto Slab', serif;
     font-size: 150%;
     padding-top: 1%;
     padding-bottom: 8%;
@@ -609,7 +607,7 @@ div#liste_services .fig p{
     color: #31796C;
 }
 
-#liste .right a:hover{
+#bottom_right a:hover{
     color: white;
 }
 
@@ -622,6 +620,10 @@ footer{
     background-color: #353535;
     color: white;
     text-align: center;
+}
+
+#footer_accueil{
+    padding-right: 25%;
 }
 
 i{
