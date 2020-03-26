@@ -122,10 +122,15 @@ nav a:hover {
     width: auto;
     height: 74%;
 }
+.origami_mobile {
+    display: none;
+}
 .logo_box {
     padding-top: 10%;
 }
-
+.logo_mobile {
+    display: none;
+}
 
 
 /* ------------- LEFT SIDE and RIGHT SIDE coordination --------------*/
@@ -800,85 +805,143 @@ i{
     }
 
         /*---- tablette ------*/
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:738px) {
         /* ----- navbar ----*/
+        
+
+
+        /*---- less than a tablette ------*/
+
+    @media screen and (max-width: 768px) {
+
         header {
-            width: 100vw;
-            height: 10vh;
-            position: fixed;
-            padding-left: 0;
-            background-color: whitesmoke;
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            width: 20vh;
+            height:100vh;
         }
-        nav {
-            height: 10%;
+        .logo_box {
+            z-index: 2;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        header .burger,
+        img {
+            z-index: 1;
+        }
+        
+        .burger div {
+            height: 5px;
+            width: 35px;
+            background: #000;
+            margin: 6px 0;
+            transition: .3s;
+        }
+        
+        .burger {
+            display: none;
+        }
+        
+        .change .b1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        
+        .change .b2 {
+            opacity: 0;
+        }
+        
+        .change .b3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+        .logo_box {
+            margin-bottom: 25px;
+        }
+        header {
+            background: whitesmoke;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
             width: 100%;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            height:10vh;
         }
-        /* ed burger */
-        .nav-links {
-            position: fixed;
-            width: 100vw;
-            height: 100vh;
-            font-size: 20px;
-            text-decoration: none;
-            background-color: whitesmoke;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 50%;  
-            z-index: -1;
-                    clip-path: circle(1000px at 90% -10%);
-                    -webkit-clip-path: circle(1000px at 100% -10%);
-       -webkit-transition: all 2s ease-out;
-       -o-transition: all 2s ease-out;
-       transition: all 2s ease-out;
-       pointer-events: none;
-        }
-        .nav-links.open {
-            -webkit-clip-path: circle(1000px at 100% -10%);
-                    clip-path: circle(1000px at 100% -10%);
-       pointer-events: all;
-        }
-        .hamburger:hover, li:hover{
-            background-color: red;
-        }
-        nav .hamburger .line {
-            width: 30px;
-            height: 3px;
-            background-color: #31796C;
-            margin: 5px;
-            z-index: 200;
-        }
-        .hamburger {
-            position: absolute;
+        .burger {
+            display: inline-block;
             cursor: pointer;
-            right: 5%;
-            top: 50%;
         }
 
-         /* ^ ed burger ^ */
-        li{
-            list-style: none;
-            margin-bottom: 40px ;
+        nav {
+        width: 1200px;
+        height: 1200px;
+        border-radius: 50%;
+        background: whitesmoke;
+        position: absolute;
+        top: -90%;
+        left:50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-20%);
+        opacity: 0;
+        transition: .9s;
         }
-        nav a {
-            text-decoration: none;
-            color: #31796C;
-            z-index: 30;
-        }
-        nav a:hover {
-            border-bottom: 2px solid #1C5850;
+
+        .nav-open {
+            transform: translateX(-50%);
+            opacity: 1;
         }
         .ORIGAMI {
             display: none;
         }
-        .logo_box {
-            display: none;
+        .origami_mobile {
+            display: block;
+            position: relative;
+            left:-3%;
+            width: 20%;
+            animation: origami_shake 1.7s ease-out 0.7s infinite;
+        }
 
+        @keyframes origami_shake {
+            0%,
+            100% {
+            -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+            -webkit-transform-origin: 0 100%;
+                    transform-origin: 0 100%;
+            }
+            10% {
+            -webkit-transform: rotate(2deg);
+                    transform: rotate(2deg);
+            }
+            20%,
+            40%,
+            60% {
+            -webkit-transform: rotate(-4deg);
+                    transform: rotate(-4deg);
+            }
+            30%,
+            50%,
+            70% {
+            -webkit-transform: rotate(4deg);
+                    transform: rotate(4deg);
+            }
+            80% {
+            -webkit-transform: rotate(-2deg);
+                    transform: rotate(-2deg);
+            }
+            90% {
+            -webkit-transform: rotate(2deg);
+                    transform: rotate(2deg);
+            }
         }
 
         /*---- règles communes ------*/
@@ -888,73 +951,73 @@ i{
         }
 
         /* ------------- ABOUT US partie Lynn --------------*/
-/* --------------- SECTION A PROPOS page d'accueil -----------*/ 
-.main_container {
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    z-index: -20;
-}
-.left_container { /* après le flex-direction: column il devient top_container */
-    width: 60%;
-
-}
-.right_container { /* après le flex-direction: column il devient bottom_container */
-    display: flex;
-    align-items: flex-end;
-    width: 60%; 
-}
-.right_container p {
-    margin-top: 12%;
-    width: 100%;
-}
-.guillemets {
-    width: 50%;
-    margin-top: 2%;
-}
-.lettrine_left {
-    margin-top: 12%;
-    float: left;
-}
-
-.rond {
-    width: 395px;
-    height: 395px;
-    border-radius: 50%;
-    background: linear-gradient(#31796C, transparent);
-    position: sticky;
-    bottom: 22%;
-    z-index: -2;
-}
-.pointdesuspension {
-    font-size: 50px;
-}
-.pointdesuspension a {
-    text-decoration: none;
-    color: #31796C;
-}
-.pointdesuspension a:hover {
-    text-decoration: none;
-    color: #113E37;
-  }
+        /* --------------- SECTION A PROPOS page d'accueil -----------*/ 
+        .main_container {
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            z-index: -20;
+        }
+        .left_container { /* après le flex-direction: column il devient top_container */
+            width: 60%;
+        }
+        .right_container { /* après le flex-direction: column il devient bottom_container */
+            display: flex;
+            align-items: flex-end;
+            width: 60%; 
+        }
+        .right_container p {
+            margin-top: 12%;
+            width: 100%;
+        }
+        .guillemets {
+            width: 50%;
+            margin-top: 2%;
+        }
+        .lettrine_left {
+            margin-top: 12%;
+            float: left;
+        }
+        .rond {
+            width: 395px;
+            height: 395px;
+            border-radius: 50%;
+            background: linear-gradient(#31796C, transparent);
+            position: sticky;
+            bottom: 22%;
+            z-index: -2;
+        }
+        .pointdesuspension {
+            font-size: 50px;
+        }
+        .pointdesuspension a {
+            text-decoration: none;
+            color: #31796C;
+        }
+        .pointdesuspension a:hover {
+            text-decoration: none;
+            color: #113E37;
+        }
 
 
 
 
-/* ------------- LEFT SIDE and RIGHT SIDE coordination --------------*/
-.side-left {
-    display: none; /*enlève la partie left seulement dans le responsive*/
-}
-.side-right {
-    width: 100%; 
-    border: green solid 3px;
-    overflow-x: hidden; /*  tout ce qui dépasse de width 100% est caché */
-}
-#us  {
-    margin-top: 8vh; /* ajout d'un margin pour que la partie 'us' ne se cache pas en dessous*/
-    height: 110vh;
-    width: 100vw;  
-}
+        /* ------------- LEFT SIDE and RIGHT SIDE coordination --------------*/
+        .side-left {
+            display: none; /*enlève la partie left seulement dans le responsive*/
+        }
+        .side-right {
+            width: 100%; 
+            border: green solid 3px;
+            overflow-x: hidden; /*  tout ce qui dépasse de width 100% est caché */
+        }
+        #us  {
+            /*margin-top: 8vh;*/ /* ajout d'un margin pour que la partie 'us' ne se cache pas en dessous*/
+            height: 110vh;
+            width: 100vw;  
+            
+        }
+
 
 
 
