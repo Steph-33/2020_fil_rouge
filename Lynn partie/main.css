@@ -167,14 +167,35 @@ nav a:hover {
     height: 100vh;
 }
 
-#footer {
-    height:12vh;
+footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 12vh;
+    width: 100%;
     background-color: #353535;
+    color: white;
+    text-align: center;
 }
+
 #footer_leftside {
     height:12vh;
     background: #353535;
 }
+
+#footer_about-us{
+    height: 12vh;
+    position: absolute;
+    top: 362%;
+}
+
+#footer_accueil{
+    padding-right: 25%;
+}
+
+i{
+    padding:0.5%;
+}
+
 
 #contact_phrase {
     display: flex;
@@ -194,16 +215,6 @@ nav a:hover {
 #contact_form_leftside {
     height: 130vh;
 }
-#footer_contact_leftside {
-    height:12vh;
-    background: #353535;
-}
-#footer_about-us{
-    height: 12vh;
-    position: absolute;
-    top: 362%;
-}
-
 
 /* ------------- ABOUT US partie Lynn --------------*/
 /* --------------- SECTION A PROPOS page d'accueil -----------*/ 
@@ -267,6 +278,11 @@ nav a:hover {
 /* -----------^ SECTION A PROPOS page d'accueil ^-----------*/
 
 /* page  about-us.html */
+#about-us {
+    height: 70vh;
+    display: flex;
+    justify-content: flex-end;
+}
 h1 {
     width: 100%;
     font-size: 40px;
@@ -285,10 +301,11 @@ h1 {
 .container_leftsideimg {
     height: 70vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-top: 2px solid #5C7773;
     margin-bottom: 10%;
-    width: 90%;
+    width: 70%;
+    margin-left: 25%;
 }
 .container_rightsideimg {
     height: 70vh;
@@ -297,7 +314,9 @@ h1 {
     justify-content: space-between;
     border-top: 2px solid #5C7773;
     margin-bottom: 10%;
-    width: 90%;
+    width: 70%;
+    margin-left: 25%;
+
 
 }
 .container_leftsideimg img, .container_rightsideimg img {
@@ -402,7 +421,7 @@ h1 {
 }
 .moving_img {
     transform: perspective(1000px);
-}
+}  /* ----- /?\ qu'est-ce que c'est ? ----*/
 
 
 /*---------------- Steph's part -------------*/
@@ -495,15 +514,81 @@ div#scroll figure p{
     text-align: justify;
 }
 
-footer{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 100%;
-    width: 100%;
-    background-color: #353535;
-    color: white;
-    text-align: center;
+/* -------------^ PROJETS, SERVICES partie STEPH ^--------------*/
+
+/* ------------- CHARTE partie COLINE --------------*/
+#titre {
+    display: flex;
+    justify-content: space-around;
 }
+
+/* post it */
+#valeurs {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap ;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.postit1 {
+    transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+}
+
+.postit2 {
+    transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+}
+
+.postit3 {
+    transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    -o-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+}
+
+.texte {
+    margin-top: 50px ;    
+}
+    
+.note {
+    background:#889781 ;
+    width: 24vw;
+    padding: 15px;
+    line-height: 1.7em;
+    text-align: center;
+    box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+}
+.police{
+    color: #363C33;
+}
+
+/* ------ animation des post-it----*/
+.note:hover {
+    background-color:rgba(108,120,103, 0.95);
+    animation: mouvement 0.4s ease forwards;
+  }
+
+  @keyframes mouvement {  
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(2deg);
+  }
+    100% {
+        transform: rotate(1deg);
+    }
+}
+/* ------^ animation des post-it ^----*/
 
 /* ------------- PARTIE SERVICES --------------*/
 #partie_services {
@@ -611,124 +696,42 @@ div#liste_services .fig p{
     color: white;
 }
 
-/* ------------- PARTIE FOOTER --------------*/
-footer{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    height: 100%;
-    width: 100%;
-    background-color: #353535;
-    color: white;
-    text-align: center;
-}
-
-#footer_accueil{
-    padding-right: 25%;
-}
-
-i{
-    padding:0.5%;
-}
-/* -------------^ PROJETS, SERVICES et FOOTER partie STEPH ^--------------*/
-
-/* ------------- CHARTE partie COLINE --------------*/
-#titre {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* post it */
-#valeurs {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap ;
-    flex-direction: row;
-    align-items: stretch;
-}
-
-.postit1 {
-    transform: rotate(-4deg);
-    -moz-transform: rotate(-4deg);
-    -webkit-transform: rotate(-4deg);
-    -o-transform: rotate(-4deg);
-    -ms-transform: rotate(-4deg);
-}
-
-.postit2 {
-    transform: rotate(2deg);
-    -moz-transform: rotate(2deg);
-    -webkit-transform: rotate(2deg);
-    -o-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-}
-
-.postit3 {
-    transform: rotate(-2deg);
-    -moz-transform: rotate(-2deg);
-    -webkit-transform: rotate(-2deg);
-    -o-transform: rotate(2deg);
-    -ms-transform: rotate(2deg);
-}
-
-.texte {
-    margin-top: 50px ;    
-}
-    
-.note {
-    background:#889781 ;
-    width: 24vw;
-    padding: 15px;
-    line-height: 1.7em;
-    text-align: center;
-    box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
-}
-.police{
-    color: #363C33;
-}
-
-/* ------ animation des post-it----*/
-.note:hover {
-    background-color:rgba(108,120,103, 0.95);
-    animation: mouvement 0.4s ease forwards;
-  }
-
-  @keyframes mouvement {  
-    0% {
-        transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(2deg);
-  }
-    100% {
-        transform: rotate(1deg);
-    }
-}
-/* ------^ animation des post-it ^----*/
-
     /* ---------- CONTACT partie GUL AGHA -----------*/
     .haut{
         height: 35vw;
-        width: 35vw;
+        width: 50vw;
+        display: flex;
         background-image: url(./images/pic.png);
         background-repeat: no-repeat;
-        background-size: 20vw, 20vw;
+        background-size: 25vw, 25vw;
         background-position: right;
+        align-items: column;   
+        padding-left: 8%; 
+    }
     
-    }
-    .childElement2{
-        height: 25vw;
-        width: 25vw;
-        padding-top: 3vw;  
-    }
     .bas{
-        height: auto;
+        height: 40%;
         width: 35vw;
-        display: flex;justify-content: center;
+        display: flex;
+        justify-content: center;
         flex-direction: column; 
         display: block;
     } 
 
-    .bottom{
+    #contact_phrase{
+        padding-top: 10%;
+        height: 20%;
+    }
+
+    .childElement2{
+        height: 25vw;
+        width: 30vw;
+    }
+
+    #contact_form{
+        height: 20%;
+    }
+    /*.bottom{
         height: 35vw;
         width: 100%;
         background-image: url(pic1.png);
@@ -740,7 +743,7 @@ i{
         align-items: flex-end;
         justify-content: center;
     
-    }
+    }*/
 
     form{
         size: 3vw;
@@ -760,7 +763,7 @@ i{
         border-left: 0px;
         border-right: 0px;
         border-bottom: 3px solid #1C5850 ;
-        background-color: #EBD8C2;  
+        background-color: #CFC7B1;  
     }
         
     button {
@@ -785,8 +788,7 @@ i{
     .mapbox{
         height: 23.5vw;
         width: 100%;
-        
-        align-items: flex-end;
+        align-items: center;
         margin-top: 15vw;
         display: flex;
         justify-content: center;
@@ -799,8 +801,7 @@ i{
     .textbox{
         height: 10vw;
         width: 50%;
-        border: solid #1C5850;
-        align-items: flex-end;
+        align-items: center;
         margin-top: 2vw;
         margin-left: 25%;
         text-align: center;
