@@ -97,6 +97,11 @@ header {
     position: fixed;
     padding-left: 2%;
 }
+
+.LOGO{
+      height: 20vh;      
+}
+
 nav {
     height: 80%;
     display: flex;
@@ -607,34 +612,6 @@ div#scroll figure p{
 }
 /* ------^ animation des post-it ^----*/
 
-/* -----  CSS POUR LA VERSION MOBILE ----- */
-
-@media screen and (max-width: 640px) {
-
-    /* post it */
-    #valeurs {
-        display: flex;
-        justify-content: flex-end;
-        flex-wrap: nowrap ;
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .texte {
-        margin-top: 50px ;    
-    }
-        
-    .note {
-        background:#889781 ;
-        width: auto;
-        padding: 15px;
-        line-height: 1.7em;
-        text-align: center;
-        box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
-    }
-
- /* -----  ^CSS POUR LA VERSION MOBILE^ ----- */
-
 
 
 /* ------------- PARTIE SERVICES --------------*/
@@ -854,16 +831,61 @@ div#liste_services .fig p{
         margin-left: 25%;
         text-align: center;
     }
+    /* ---------- ^CONTACT partie GUL AGHA^ -----------*/
 
-        /*---- tablette ------*/
+
+
+
+/*------------   MEDIA SCREEN tablette -----------*/
     @media screen and (max-width:738px) {
         /* ----- navbar ----*/
         
+    }
 
-
-        /*---- less than a tablette ------*/
+/*-------------  MEDIA SCREEN mobile ------------*/
 
     @media screen and (max-width: 768px) {
+
+
+    /*---- règles communes ------*/
+
+    .my_main_section {
+        padding: 10% 5% 10% 5%;
+    }
+
+
+    /* ------------- LEFT SIDE and RIGHT SIDE coordination --------------*/
+    .side-left {
+        display: none; /*enlève la partie left seulement dans le responsive*/
+    }
+    .side-right {
+        width: 100%; 
+        overflow-x: hidden; /*  tout ce qui dépasse de width 100% est caché */
+    }
+    #us  {
+        /*margin-top: 8vh;*/ /* ajout d'un margin pour que la partie 'us' ne se cache pas en dessous*/
+        height: auto;  
+    }
+
+    #projets {
+        background-color: #113E37;
+        height: auto;
+    }
+     
+    #charte {
+        height: auto;
+    }
+
+    #nos_services {
+        background-color: #113E37;
+        height: auto; 
+    }
+
+
+
+
+
+/* ------------ NAV BARRE ------------- */
 
         header {
             background: whitesmoke;
@@ -874,6 +896,11 @@ div#liste_services .fig p{
             width: 20vh;
             height:100vh;
         }
+
+        .guillemets{
+            height: 9.5vh;      
+        }
+
         .logo_box {
             z-index: 2;
         }
@@ -995,13 +1022,8 @@ div#liste_services .fig p{
             }
         }
 
-        /*---- règles communes ------*/
+    
 
-        .my_main_section {
-            padding: 10% 5% 10% 5%;
-        }
-
-        /* ------------- ABOUT US partie Lynn --------------*/
         /* --------------- SECTION A PROPOS page d'accueil -----------*/ 
         .main_container {
             align-items: center;
@@ -1011,6 +1033,7 @@ div#liste_services .fig p{
         }
         .left_container { /* après le flex-direction: column il devient top_container */
             width: 60%;
+            margin-top: 15vh;
         }
         .right_container { /* après le flex-direction: column il devient bottom_container */
             display: flex;
@@ -1051,28 +1074,35 @@ div#liste_services .fig p{
         }
 
 
-
-
-        /* ------------- LEFT SIDE and RIGHT SIDE coordination --------------*/
-        .side-left {
-            display: none; /*enlève la partie left seulement dans le responsive*/
+        /* -----  partie charte MOBILE ----- */
+        #valeurs {
+            display: flex;
+            justify-content: flex-end;
+            flex-wrap: nowrap ;
+            flex-direction: column;
+            align-items: stretch;
         }
-        .side-right {
-            width: 100%; 
-            border: green solid 3px;
-            overflow-x: hidden; /*  tout ce qui dépasse de width 100% est caché */
+
+        .texte {
+            margin-top: 50px ;    
         }
-        #us  {
-            /*margin-top: 8vh;*/ /* ajout d'un margin pour que la partie 'us' ne se cache pas en dessous*/
-            height: 110vh;
-            width: 100vw;  
             
+        .note {
+            background:#889781 ;
+            width: auto;
+            padding: 15px;
+            line-height: 1.7em;
+            text-align: center;
+            box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
         }
+
+        /* -----  ^partie charte MOBILE^ ----- */
+
 
         /* ------------- SECTION SERVICES Page d'Accueil --------------*/
 
         #nos_services{
-            background-color: whitesmoke;
+            background-color: #113E37;
         }
 
         .box{
@@ -1097,8 +1127,33 @@ div#liste_services .fig p{
         div#scroll figure p{
             display: none;
         }
-
+    
+/* ------------- PAGE CONTACTS  -----------*/
+        .childElement2, h2{
+            font-size: 15px;
+            padding-top: 10px;
+        }
+        .childElement2, p{
+            font-size: small;
+        }
+        .form{
+            size: 1vw;
+        }
+        .mapbox{
+            height: 30vw;
+            width: 50%;
+            margin-top: 50vw;
+            margin-left: 25vw;
+        }
+        .textbox{
+        width: 50%;
+        margin-bottom: 5vw;
+        margin-left: 25%;
+        margin-bottom: 20vw;
+        }
+        input{
+            height: 5px;
+        }
 
 
     }
-}
