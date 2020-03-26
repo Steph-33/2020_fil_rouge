@@ -283,11 +283,12 @@ i{
     display: flex;
     justify-content: flex-end;
 }
-h1 {
+.titre_about-us {
     width: 100%;
-    font-size: 40px;
-    margin-bottom: 2%;
+    font-size: 48px;
+    margin: 2% 0 2% 25%;
     
+
 }
 #about_us img {
     border-radius: 0 0 20px 20px;
@@ -301,11 +302,12 @@ h1 {
 .container_leftsideimg {
     height: 70vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     border-top: 2px solid #5C7773;
     margin-bottom: 10%;
     width: 70%;
     margin-left: 25%;
+    text-align: justify;
 }
 .container_rightsideimg {
     height: 70vh;
@@ -316,8 +318,7 @@ h1 {
     margin-bottom: 10%;
     width: 70%;
     margin-left: 25%;
-
-
+    text-align: justify;
 }
 .container_leftsideimg img, .container_rightsideimg img {
     height: 100%;
@@ -327,8 +328,25 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-end;
-    padding: 2% 0;
+    align-items: flex-end;  
+    padding: 2% 0 0 0;
+}
+.description {
+    width: 100%;
+}
+.réseaux {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+#social_icon {
+    margin: 2% 2% 0 2%;
+    opacity: 0.5;
+}
+#social_icon:hover {
+    cursor: pointer;
+    opacity: 1;
+
 }
 .fiche_rightsideimg {
     width: 40%;
@@ -336,9 +354,8 @@ h1 {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 2% 0;
+    padding: 2% 0 0 0;
 }
-
 #about_us h3 {
     /*background-color: #5C7773;*/
     color:#113E37;
