@@ -15,3 +15,4 @@ for (var i = 0; i < links.length; i++) {
         menu.classList.remove('nav-open');
     });
 }
+

@@ -6,6 +6,7 @@
     <title>PANA - About us</title>
     <link rel="stylesheet" href="main.css">
   
+    <script src="./app.js"></script>
     <script src="https://kit.fontawesome.com/1dac55b7a2.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="JS/Rotation.css">
@@ -19,28 +20,35 @@
     
     <!--Lynn -->
  
-
+<section id="main_container">
       <!----------------------------------- Barre de navigation ---------------------------------->
-            <div class='nav'>
-                <header class="blue">
-                    <div class="logo_box blue">
-                        <a href="./index.html"><img class="LOGO" src="./images/logo vert.png" alt="logo agence"></a>
-                    </div>
-                    
-              
-                    <nav class="red" > 
-                      <ul class="red">
-                        <li> <a href="about_us.html">A propos</a> </li>
-                        <li> <a href="#projets">Projets</a> </li>
-                        <li> <a href="#charte">Charte</a> </li>
-                        <li> <a href="#services">Services</a> </li>
-                        <li> <a href="partie_contact.html">Contact</a> </li>
-                      </ul>
-              
-                      <img class="ORIGAMI red" src="./images/logo-co-svg (vert-clair).png" alt="Chaine origami">
-                    </nav>
-                  </header>
+      <div class='nav'>
+
+        <header class="blue">
+            <div class="logo_box blue">
+                <a href="./index.html"><img class="LOGO" src="./images/logo vert.png" alt="logo agence"></a>
             </div>
+        
+            <div class="burger" onclick="myFunction(this)">
+                <div class="b1"></div>
+                <div class="b2"></div>
+                <div class="b3"></div>
+            </div>
+            <nav class="red" > 
+                
+                <ul class="navlinks red">
+                    <li class="logo_mobile"> <a href="index.html"> <img src="./images/logo vert.png" alt="logo vert"></a> </li>
+                    <li> <a href="about_us.html">A propos</a> </li>
+                    <li> <a href="index.html">Projets</a> </li>
+                    <li> <a href="index.html">Charte</a> </li>
+                    <li> <a href="index.html">Services</a> </li>
+                    <li> <a href="partie_contact.html">Contact</a> </li>
+                </ul>
+                <img class="origami_mobile" src="./images/origimi-2.svg" alt="origami grue">
+              <img class="ORIGAMI red" src="./images/logo-co-svg (vert-clair).png" alt="Chaine origami">
+            </nav>
+        </header>
+    </div>
       <!------------------------ ^Barre de navigation  ^-------------------------->
 
      <!---------------------  section id="about_us----------------------------->
@@ -49,7 +57,7 @@
                       <h2 class="titre_about-us red">Team</h2>
                       <div class="container_leftsideimg staff1 red">
                           <img id="moving_img" src="./images/about1.png" alt="peinture abstraite">
-                          <h2 class="red"> Tyler DURDEN</h2>
+                          <h2 class="staff_name red"> Tyler DURDEN</h2>
                           <div class="fiche_leftsideimg red">
                               <h3>Software engineer</h3>
                               
@@ -59,10 +67,9 @@
                                 <div class="réseaux">
                                   <div style="font-size:2rem;">
                                     <a href="https://www.thunderbird.net/fr/"><i id="social_icon" class="fas fa-at" ></i></a>
-                                  <a href="https://www.facebook.com/"><i id="social_icon" class="fab fa-facebook-square"></i></a>
-                                  <a href="https://twitter.com/login?lang=fr"><i id="social_icon" class="fab fa-twitter-square"></i></a>
-                                  <a href="https://www.linkedin.com/"><i id="social_icon" class="fab fa-linkedin"></i></a>
-                                  <a href="https://www.linkedin.com/"><i id="social_icon" class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.facebook.com/"><i id="social_icon" class="fab fa-facebook-square"></i></a>
+                                    <a href="https://twitter.com/login?lang=fr"><i id="social_icon" class="fab fa-twitter-square"></i></a>
+                                    <a href="https://www.linkedin.com/"><i id="social_icon" class="fab fa-linkedin"></i></a>
                                 </div>
                               </div>
 
@@ -100,7 +107,7 @@
                               <div class="description">
                                 <p>Monica est d’une rigueur sans faille. Elle sait allier stratégie commerciale et talents de communication pour promouvoir les services et les valeurs du groupe PANAgency. Dans un soucis permanent de satisfaction de nos clients, elle sait trouver les vecteurs qui vous permettront de communiquer toujours plus loin grâce à nous ! </p>
                                 <div class="réseaux">
-                                  <a href="https://www.facebook.com/"><i id="social_icon" class="fab fa-facebook-square"></i></a>
+                              
                                     <div style="font-size:2rem;">
                                       <a href="https://www.thunderbird.net/fr/"><i id="social_icon" class="fas fa-at" ></i></a>
                                       <a href="https://www.facebook.com/"><i id="social_icon" class="fab fa-facebook-square"></i></a>
@@ -150,6 +157,8 @@
                     </div>
               </footer>
 
-    
+              <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+              <script src="./main.js"></script>
+    </section>
     </body>
 </html>
