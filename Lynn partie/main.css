@@ -1039,6 +1039,34 @@ div#liste_services .fig p{
             
         }
 
+        /* ------------- SECTION SERVICES Page d'Accueil --------------*/
+
+        #nos_services{
+            background-color: whitesmoke;
+        }
+
+        .box{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+
+        #box_services{
+            display: flex;
+            flex-direction: column;
+        }
+
+        div#scroll figure a.name:hover{
+            color: #113E37;
+        }
+
+        div#scroll figure img { 
+            display: none;
+        }
+
+        div#scroll figure p{
+            display: none;
+        }
 
 
 
