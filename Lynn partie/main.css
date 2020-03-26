@@ -1040,10 +1040,14 @@ div#liste_services .fig p{
             margin-top: 15vh;
         }
         .right_container { /* après le flex-direction: column il devient bottom_container */
-            display: flex;
-            align-items: flex-end;
             width: 60%; 
         }
+
+        .lettrine_container{
+            display: flex;
+            justify-content: stretch;
+        }
+
         .right_container p {
             margin-top: 12%;
             width: 100%;
@@ -1115,7 +1119,7 @@ div#liste_services .fig p{
             justify-content: flex-start;
         }
 
-        #box_services{
+        .box_services{
             display: flex;
             flex-direction: column;
         }
@@ -1162,6 +1166,67 @@ div#liste_services .fig p{
 
         #contact_form {
             margin-top: 30vh;
+        }
+
+/* ------------- PAGE SERVICES --------------*/
+        #partie_services {
+            background-color:#CFC7B1;
+            background-image: url(images/fond_1.png);
+            background-repeat: no-repeat;
+            background-size: 60vw, 60vw;
+            background-position: right;
+        }
+
+        #titre_services{
+            margin-left: 27vw ;
+            font-weight: bold;
+            padding-top: 15vh;
+            padding-bottom: 4%;
+        }
+
+        #liste{
+            display: none;
+        }
+
+        .box_services{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10vh;
+
+        }
+
+
+        div#liste_services .fig p.nom{
+            color: #31796C;
+            width: 100%;
+            font-family: 'Neucha', cursive;
+            font-size: 200%;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 2%;
+            padding-bottom: 2%;
+        }
+
+        div#liste_services .fig img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            min-height: 180px; 
+            border-radius: 20px 20px 20px 20px;
+        }
+
+        div#liste_services .fig p{
+            width: 60%;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: justify;
+            font-size: 20px;
+            padding-top: 1%;
+            padding-bottom: 8%;
+        }
+
+        #bottom_right{
+            display: none;
         }
 
     }
