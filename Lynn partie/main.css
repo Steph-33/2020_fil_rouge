@@ -599,15 +599,16 @@ div#scroll figure p{
     background-position: right;
 }
 
-.titre{
+#titre_projets{
     padding-left: 25%;
-    color: #113E37;;
+    color: #31796C;
     text-align: left;
-    font-size: 300%;
+    font-size: 320%;
     font-family: 'Neucha', cursive;
     font-weight: bold;
-    padding-top: 10%;
-    padding-bottom: 1%;
+    padding-top: 2%;
+    padding-left: 1%;
+    padding-bottom: 4%;
 }
 
 #liste{
