@@ -854,7 +854,11 @@ div#liste_services .fig p{
 
      /* H2 section projet*/
      #titre_projets {
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 26px;
     }
 
 
@@ -1030,55 +1034,34 @@ div#liste_services .fig p{
 
         /* --------------- SECTION A PROPOS page d'accueil -----------*/ 
         .main_container {
+            display: flex;
             align-items: center;
             flex-direction: column;
-            justify-content: center;
             z-index: -20;
         }
         .left_container { /* après le flex-direction: column il devient top_container */
             width: 60%;
-            margin-top: 15vh;
+            margin-top: 8vh;
         }
         .right_container { /* après le flex-direction: column il devient bottom_container */
             width: 60%; 
+            float: right;      
+            margin-top: -23vh;      
         }
 
-        .lettrine_container{
-            display: flex;
-            justify-content: stretch;
-        }
-
-        .right_container p {
-            margin-top: 12%;
-            width: 100%;
-        }
         .guillemets {
             width: 50%;
             margin-top: 2%;
         }
-        .lettrine_left {
-            margin-top: 12%;
-            float: left;
-        }
+
         .rond {
-            width: 395px;
-            height: 395px;
+            width: 295px;
+            height: 295px;
             border-radius: 50%;
             background: linear-gradient(#31796C, transparent);
-            position: sticky;
+            position: relative;
             bottom: 22%;
             z-index: -2;
-        }
-        .pointdesuspension {
-            font-size: 50px;
-        }
-        .pointdesuspension a {
-            text-decoration: none;
-            color: #31796C;
-        }
-        .pointdesuspension a:hover {
-            text-decoration: none;
-            color: #113E37;
         }
 
 
