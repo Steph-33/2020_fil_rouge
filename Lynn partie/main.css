@@ -607,6 +607,36 @@ div#scroll figure p{
 }
 /* ------^ animation des post-it ^----*/
 
+/* -----  CSS POUR LA VERSION MOBILE ----- */
+
+@media screen and (max-width: 640px) {
+
+    /* post it */
+    #valeurs {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: nowrap ;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .texte {
+        margin-top: 50px ;    
+    }
+        
+    .note {
+        background:#889781 ;
+        width: auto;
+        padding: 15px;
+        line-height: 1.7em;
+        text-align: center;
+        box-shadow: 0 10px 10px 2px rgba(0,0,0,0.3);
+    }
+
+ /* -----  ^CSS POUR LA VERSION MOBILE^ ----- */
+
+
+
 /* ------------- PARTIE SERVICES --------------*/
 #partie_services {
     background-color:#CFC7B1;
