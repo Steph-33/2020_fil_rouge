@@ -7,9 +7,8 @@
     <link rel="stylesheet" href='./main.css' />
     
     <script src="./app.js"></script>
-    <SCRIPT type="text/javascript" src="./Carroussel_rotation.js"></script>  
-    <SCRIPT type="text/javascript">
-        
+    <SCRIPT src="./Carroussel_rotation.js"></script>  
+    <script>
         var Caroussel;
         function GenererCarrousel(){
             
@@ -28,7 +27,6 @@
             Caroussel.Vitesse_Changement_Images(1.5); //Vitesse de modifications de la taille des photos (par d�fault 5pixels)
         }
     </script>
-    <link rel="stylesheet" href="JS/Rotation.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -44,12 +42,12 @@
 
         <div class='section-box'>
 
-            <!----------------------------------- Barre de navigation ---------------------------------->
+            <!-- ----------------- Barre de navigation ----------------------- -->
             <div class='nav'>
 
                 <header class="blue">
                     <div class="logo_box blue">
-                        <a href="./panagency.html"><img class="LOGO" src="./images/logo vert.png" alt="logo agence" > </a>
+                        <a href="./panagency.html"><img class="LOGO" src="./images/logo-vert.png" alt="logo agence" > </a>
                     </div>
                 
                     <div class="burger" onclick="myFunction(this)">
@@ -60,7 +58,7 @@
                     <nav class="red" > 
                         
                         <ul class="navlinks red">
-                            <li class="logo_mobile"> <a href="panagency.html"> <img src="./images/logo vert.png" alt="logo vert"></a> </li>
+                            <li class="logo_mobile"> <a href="panagency.html"> <img src="./images/logo-vert.png" alt="logo vert"></a> </li>
                             <li> <a href="partie_about_us.html">A propos</a> </li>
                             <li> <a href="#projets">Projets</a> </li>
                             <li> <a href="#charte">Charte</a> </li>
@@ -68,27 +66,23 @@
                             <li> <a href="partie_contact.html">Contact</a> </li>
                         </ul>
                         <img class="origami_mobile" src="./images/origimi-2.svg" alt="origami grue">
-                      <img class="ORIGAMI red" src="./images/logo-co-svg (vert-clair).png" alt="Chaine origami">
+                      <img class="ORIGAMI red" src="./images/logo-co-svg-vert-clair.png" alt="Chaine origami">
                     </nav>
                 </header>
             </div>
 
 
-            <!------------------------ Coté gauche de la page -------------------------------------->
+            <!-- ---------------------- Coté gauche de la page ------------------------------------ -->
             <div class='side-left'>
-                <section id="us_leftside"></section>
-                <section id="projets_leftside"></section>
-                <section id="charte_leftside"></section>
-                <section id="services_leftside"></section>
-                <section id="footer_leftside"></section>
-
-                
-
-
+                <div id="us_leftside"></div>
+                <div id="projets_leftside"></div>
+                <div id="charte_leftside"></div>
+                <div id="services_leftside"></div>
+                <div id="footer_leftside"></div>
 
             </div>
 
-            <!----------------------- Coté droit de la page ------------------------------------>
+            <!-- --------------------- Coté droit de la page ---------------------------------- -->
             <div class='side-right'>
 
                     <!-- SECTION LYNN ___ ABOUT US  -->
@@ -101,7 +95,7 @@
                             </div>
                             <div class="right_container red">
                                 <div class="lettrine_container red">
-                                    <div class="lettrine_left red" ><p class="lettrine" >P</P></p></div>
+                                    <div class="lettrine_left red" ><p class="lettrine"> P</p></div>
                                     <p class="red"> ANAgency est une agence web spécialisée dans la communication de professionnels du livre et des média papiers. Nous optimisons vos projets, votre visiblité et votre renommée, auprès des lecteur.ices et des autres professionnels du secteur. 
                                          <br> <span class="pointdesuspension"><a href="./about_us.html">...</a></span></p>
                                 </div>
@@ -110,9 +104,7 @@
 
                     </section>    
 
-                    <!-- SECTION STEPH ___ PROJET  -->
-                   
-                        
+                    <!-- SECTION STEPH ___ PROJET  -->                       
                     <center id="projets" class="my_main_section red">
                         <h2 id="titre_projets">
                             Ils nous ont fait confiance...
@@ -122,20 +114,18 @@
                         </div>
                     </center>
                     
-                            
 
                      <!-- SECTION COLINE ___ CHARTE -->
 
-                     <section id="charte" class="my_main_section">
+                    <section id="charte" class="my_main_section">
             
-
                         <div class="section_container blue">
                             <section id="titre">
                                 <h2> Quand on parle de valeurs chez PANAgencie… </h2>
                             </section>
     
                             <section id="valeurs">
-                            <!-- 1e post it -->
+                                <!-- 1e post it -->
                                 <section class="postit1">
                                     <div class="texte">    
                                         <blockquote class="note" >
@@ -143,10 +133,10 @@
                                             <br>
                                             <p class="police">Pour nous, porter une attention particulière à chaque client est un savoir faire.</p>     
                                         </blockquote>
-                                    </div>
-                            </section>
-    
-                            <!-- 2e post it -->
+                                    </div>   
+                                </section>
+        
+                                <!-- 2e post it -->
                                 <section class="postit2">
                                     <div class="texte">    
                                         <blockquote class="note">
@@ -156,8 +146,8 @@
                                         </blockquote>
                                     </div>
                                 </section>
-    
-                            <!-- 3e post it -->
+        
+                                <!-- 3e post it -->
                                 <section class="postit3">
                                     <div class="texte">     
                                         <blockquote class="note">
@@ -167,12 +157,12 @@
                                         </blockquote>
                                     </div>
                                 </section>
+
+                            </section>
+
                         </div>
                         
-
                     </section>
-
-                    <script src="charte.js"></script>
 
                     <!-- SECTION STEPH & GUL AGHA___ SERVICES  -->
                         <section id="nos_services" class="my_main_section red">

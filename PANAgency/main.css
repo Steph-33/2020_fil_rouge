@@ -150,8 +150,7 @@ nav a:hover {
 
 /* ------------- LEFT SIDE and RIGHT SIDE coordination --------------*/
 #us  {
-    height: 100vh;
-    
+    height: 100vh;  
 }
 #us_leftside {
     height: 100vh;
@@ -196,19 +195,16 @@ footer{
     text-align: center;
     isolation: isolate;
 }
-
 #footer_leftside {
     height:12vh;
     background: #353535;
     isolation: isolate;
 }
-
 #footer_about-us{
     height: 12vh;
     position: absolute;
     top: 362%;
 }
-
 #footer_accueil{
     padding-right: 25%;
 }
@@ -216,7 +212,6 @@ footer{
 i{
     padding:0.5%;
 }
-
 
 #contact_phrase {
     display: flex;
@@ -360,11 +355,11 @@ i{
     text-align: center;
     margin-top: 10px;
 }
-#social_icon {
+.social_icon {
     margin: 2% 2% 0 2%;
     opacity: 0.5;
 }
-#social_icon:hover {
+.social_icon:hover {
     cursor: pointer;
     opacity: 1;
 
@@ -741,7 +736,6 @@ div#liste_services .fig p{
         background-repeat: no-repeat;
         background-size: 25vw, 25vw;
         background-position: right;
-        align-items: column;   
         padding-left: 8%; 
     }
     
@@ -767,25 +761,10 @@ div#liste_services .fig p{
     #contact_form{
         height: 20%;
     }
-    /*.bottom{
-        height: 35vw;
-        width: 100%;
-        background-image: url(pic1.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        color: aliceblue;
-        text-align: center;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-    
-    }*/
 
     form{
-        size: 3vw;
         height: 20vw;
         width: 100%;
-        
     }
   
     input[type=text], select, textarea{
@@ -813,8 +792,7 @@ div#liste_services .fig p{
         cursor: pointer;
         margin-top: 2vw;
         box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
-    }
-        
+    } 
 
     textarea{
         height: 7vw;
@@ -829,9 +807,10 @@ div#liste_services .fig p{
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden; 
+    }
+    .reclangle-carte{
         border-radius: 25px;
-        overflow: hidden;
-        
     }
 
     .textbox{
@@ -1144,15 +1123,14 @@ div#liste_services .fig p{
         .childElement2, p{
             font-size: small;
         }
-        .form{
-            size: 1vw;
-        }
+       
         .mapbox{
             height: 30vw;
             width: 50%;
             margin-top: 50vw;
             margin-left: 25vw;
         }
+        
         .textbox{
         width: 50%;
         margin-bottom: 5vw;
@@ -1290,11 +1268,11 @@ div#liste_services .fig p{
             text-align: center;
             margin-top: 10px;
         }
-        #social_icon {
+        .social_icon {
             margin: 2% 2% 0 2%;
             opacity: 0.5;
         }
-        #social_icon:hover {
+        .social_icon:hover {
             cursor: pointer;
             opacity: 1;
         }
